@@ -10,7 +10,8 @@ export const Services = {
       icon: "/icons/3d-truck.png",
 
       title: "Seamless Freight Forwarding Solutions",
-      description: `Maxline offers reliable and efficient freight forwarding services, ensuring smooth global logistics and supply chain management. We handle air, sea, and land transportation with precision, delivering your goods safely and on time.`,
+      description:
+        "Maxline offers reliable and efficient freight forwarding services, ensuring smooth global logistics and supply chain management. We handle air, sea, and land transportation with precision, delivering your goods safely and on time.",
       image: "/images/services.webp",
       href: "https://www.maxlineglobal.com/",
     },
@@ -18,7 +19,8 @@ export const Services = {
       icon: "/icons/information-technology.png",
 
       title: "Transforming Businesses with Expert IT Consultancy",
-      description: `Stay ahead in the digital world with Maxline’s IT consultancy services. We provide tailored technology solutions, including network infrastructure, cybersecurity, cloud computing, and software development, ensuring your business thrives in the tech-driven era.`,
+      description:
+        "Stay ahead in the digital world with Maxline’s IT consultancy services. We provide tailored technology solutions, including network infrastructure, cybersecurity, cloud computing, and software development, ensuring your business thrives in the tech-driven era.",
       image: "/images/digital-data.webp",
       href: "https://www.maxlineglobal.com/",
     },
@@ -26,7 +28,8 @@ export const Services = {
       icon: "/icons/money-bag.png",
 
       title: "Strategic Financial Consultancy for Business Growth",
-      description: `Maxline’s financial consultancy services help businesses optimize financial performance, manage risks, and ensure compliance. Our expert advisors provide insights into budgeting, investment strategies, and financial planning for sustainable success.`,
+      description:
+        "Maxline’s financial consultancy services help businesses optimize financial performance, manage risks, and ensure compliance. Our expert advisors provide insights into budgeting, investment strategies, and financial planning for sustainable success.",
       image: "/images/data-analyze.webp",
       href: "https://www.maxlineglobal.com/",
     },
