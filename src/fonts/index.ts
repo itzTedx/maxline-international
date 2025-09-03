@@ -36,7 +36,6 @@ const generalSans = localFont({
   variable: "--font-general-sans",
   display: "swap",
 });
-
 const polysans = localFont({
   src: [
     {
@@ -58,5 +57,4 @@ const polysans = localFont({
   variable: "--font-poly-sans",
   display: "swap",
 });
-
 export { generalSans, polysans };
