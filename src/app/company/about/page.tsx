@@ -1,8 +1,9 @@
+import { Suspense } from "react";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
-import { Suspense } from "react";
 
 import { LoadingSpinner } from "@/components/loading-spinner";
+
 import { HeroBanner } from "@/modules/about/hero-banner";
 
 const Overview = dynamic(() => import("@/modules/about/overview").then((mod) => mod.Overview), {
