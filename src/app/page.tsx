@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 
-import { Hero } from "@/features/home/hero";
+import { Hero } from "@/modules/home/hero";
 
 // Dynamic imports for better code splitting
 const Features = dynamic(() =>
