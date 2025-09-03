@@ -15,11 +15,5 @@
   ],
 
   "typescript.tsdk": "node_modules/typescript/lib",
-  "cSpell.words": [
-    "Maxline",
-    "plaiceholder",
-    "signup",
-    "Tiktok",
-    "ziron",
-  ]
+  "cSpell.words": ["Leviton", "Maxline", "plaiceholder", "signup", "Tiktok", "ziron"]
 }

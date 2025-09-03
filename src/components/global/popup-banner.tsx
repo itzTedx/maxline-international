@@ -36,17 +36,17 @@ export function PopupBanner({ enable }: Props) {
         </DialogHeader>
         <div className="relative">
           <Image
-            src="/announcement.webp"
-            className="absolute z-50 -translate-x-1/2 -translate-y-1/2 max-md:left-1/2 md:-translate-x-1/2 md:-rotate-12"
-            width={160}
-            height={80}
             alt=""
+            className="-translate-x-1/2 -translate-y-1/2 md:-translate-x-1/2 md:-rotate-12 absolute z-50 max-md:left-1/2"
+            height={80}
+            src="/announcement.webp"
+            width={160}
           />
           <div className="relative aspect-16/6 overflow-hidden rounded-md">
-            <Image src="/banner.webp" fill className="object-cover" alt="" />
+            <Image alt="" className="object-cover" fill src="/banner.webp" />
           </div>
           <div className="space-y-2 p-6 text-sm">
-            <h2 className="font-poly-sans text-2xl font-semibold">
+            <h2 className="font-poly-sans font-semibold text-2xl">
               Leviton Signs with Maxline for KSA Market Expansion!
             </h2>
             <p>
@@ -73,7 +73,7 @@ export function PopupBanner({ enable }: Props) {
               Stay tuned for updates on product availability, distribution channels, and exclusive launches tailored
               specifically for the Saudi market.
             </p>
-            <p className="text-lg font-medium text-sky-600">Welcome, Leviton - powering progress in KSA!</p>
+            <p className="font-medium text-lg text-sky-600">Welcome, Leviton - powering progress in KSA!</p>
           </div>
         </div>
         <DialogFooter className="md:hidden">
