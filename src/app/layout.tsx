@@ -8,6 +8,7 @@ import { PopupBanner } from "@/components/global/popup-banner";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { Toaster } from "@/components/ui/sonner";
+
 import { generalSans, polysans } from "@/fonts";
 import { siteConfig } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
@@ -60,7 +61,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn("relative antialiased", generalSans.className, polysans.variable)}>
-        <div data-vaul-drawer-wrapper className="bg-background">
+        <div className="bg-background" data-vaul-drawer-wrapper>
           <NextTopLoader />
           <PopupBanner enable={false} />
           <Navbar />
