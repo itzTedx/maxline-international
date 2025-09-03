@@ -1,12 +1,19 @@
 {
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": "always",
-    "source.organizeImports": "always"
+    "source.organizeImports.biome": "explicit",
+    "source.fixAll.biome": "explicit"
   },
+  "editor.defaultFormatter": "biomejs.biome",
   "files.associations": {
     "*.css": "tailwindcss"
   },
+  "tailwindCSS.experimental.configFile": "src/styles/globals.css",
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+
   "typescript.tsdk": "node_modules/typescript/lib",
   "cSpell.words": [
     "Maxline",
