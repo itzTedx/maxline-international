@@ -7,7 +7,7 @@ import { IconGoogle } from "@/assets/icons";
 import { AuroraText } from "@/components/animations/aurora-text";
 import { Button } from "@/components/ui/button";
 
-import { AvatarGroup } from "./components/avata-group";
+import { AvatarGroup } from "./components/avatar-group";
 import { HeroVideo } from "./components/hero-video";
 import { StatsSection } from "./components/stats-section";
 

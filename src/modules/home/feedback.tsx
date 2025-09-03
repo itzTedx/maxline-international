@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/carousel";
 import { Separator } from "@/components/ui/separator";
 
-import { FEEDBACKS } from "./constant";
+import { FEEDBACKS } from "./data/constant";
 
 const ReviewCard = memo(({ feed }: { feed: (typeof FEEDBACKS)[0] }) => (
   <article itemScope itemType="https://schema.org/Review">

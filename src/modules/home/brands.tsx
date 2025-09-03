@@ -3,7 +3,7 @@ import Image from "next/image";
 import { AuroraText } from "@/components/animations/aurora-text";
 
 import { Sparkles } from "./components/logo-bar";
-import { LOGOS } from "./constant";
+import { LOGOS } from "./data/constant";
 
 export const Brands = () => {
   return (
