@@ -3,6 +3,7 @@ export const mapCoordinates = [
     start: { lat: 64.2008, lng: -149.4937 },
     end: { lat: 34.0522, lng: -118.2437 },
   },
+
   {
     start: { lat: 64.2008, lng: -149.4937 },
     end: { lat: -15.7975, lng: -47.8919 },
