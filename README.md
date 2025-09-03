@@ -231,8 +231,8 @@ The project is optimized for deployment on multiple platforms:
 
 3. **Create environment file**
    ```bash
-   cp .env.example .env.local
-   nano .env.local
+   cp .env.example .env
+   nano .env
    # Add your environment variables
    ```
 
@@ -254,7 +254,7 @@ The project is optimized for deployment on multiple platforms:
    ```nginx
    server {
        listen 80;
-       server_name yourdomain.com www.yourdomain.com;
+       server_name maxline-international.com www.maxline-international.com;
        
        location / {
            proxy_pass http://localhost:3000;
@@ -303,7 +303,7 @@ The project is optimized for deployment on multiple platforms:
 
 1. **Obtain SSL certificate**
    ```bash
-   sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
+   sudo certbot --nginx -d maxline-international.com -d www.maxline-international.com
    ```
 
 2. **Auto-renewal setup**
@@ -320,7 +320,7 @@ Create a production environment file:
 ```bash
 # .env.local
 NODE_ENV=production
-NEXT_PUBLIC_SITE_URL=https://yourdomain.com
+NEXT_PUBLIC_SITE_URL=https://maxline-international.com
 # Add other required environment variables
 ```
 
@@ -411,7 +411,7 @@ This project is private and proprietary to Maxline International.
 
 ## 👨‍💻 Development Team
 
-Website developed by [Ziron Media](https://www.zironmedia.com)
+Website designed & developed by [Ziron Media](https://www.zironmedia.com)
 
 ---
 
