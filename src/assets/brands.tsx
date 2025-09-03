@@ -1,55 +1,66 @@
 export const TradingBrands = () => {
   return (
-    <svg width="758" height="569" viewBox="0 0 758 569" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      fill="none"
+      height="569"
+      viewBox="0 0 758 569"
+      width="758"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g clipPath="url(#clip0_146_7444)">
         <path
           d="M379 173.941V175.465C379 185.794 370.576 194.176 360.175 194.176H254.173"
           stroke="#BAE6FD"
-          strokeOpacity="0.7"
           strokeMiterlimit="10"
+          strokeOpacity="0.7"
         />
         <path
           d="M379 173.941V175.465C379 185.794 387.424 194.176 397.825 194.176H503.827"
           stroke="#BAE6FD"
-          strokeOpacity="0.7"
           strokeMiterlimit="10"
+          strokeOpacity="0.7"
         />
         <path
           d="M379 237C379 247.337 370.576 255.71 360.176 255.71H278.909C268.518 255.71 260.084 264.083 260.084 274.421V453.5"
           stroke="#BAE6FD"
-          strokeOpacity="0.7"
           strokeMiterlimit="10"
+          strokeOpacity="0.7"
         />
         <path
           d="M379 237C379 247.337 387.424 255.71 397.825 255.71H479.092C489.483 255.71 497.916 264.083 497.916 274.421V453"
           stroke="#BAE6FD"
-          strokeOpacity="0.7"
           strokeMiterlimit="10"
+          strokeOpacity="0.7"
         />
-        <path d="M379 117.875V299.721" stroke="#BAE6FD" strokeOpacity="0.7" strokeMiterlimit="10" />
+        <path
+          d="M379 117.875V299.721"
+          stroke="#BAE6FD"
+          strokeMiterlimit="10"
+          strokeOpacity="0.7"
+        />
         <path
           d="M118.596 107.51H170.101C180.502 107.51 188.926 99.1367 188.926 88.7993V77.6479C188.926 67.3104 197.35 58.9376 207.751 58.9376H260.479"
           stroke="#BAE6FD"
-          strokeOpacity="0.7"
           strokeMiterlimit="10"
+          strokeOpacity="0.7"
         />
         <path
           d="M639.404 107.51H587.899C577.498 107.51 569.074 99.1367 569.074 88.7993V77.6479C569.074 67.3104 560.65 58.9376 550.249 58.9376H497.521"
           stroke="#BAE6FD"
-          strokeOpacity="0.7"
           strokeMiterlimit="10"
+          strokeOpacity="0.7"
         />
         <path
           d="M260.084 314.259V347.984C260.084 358.322 251.66 366.694 241.259 366.694H206.584H156.246"
           stroke="#BAE6FD"
-          strokeOpacity="0.7"
           strokeMiterlimit="10"
+          strokeOpacity="0.7"
         />
         <path
           d="M497.907 312.201V345.926C497.907 356.263 506.331 364.636 516.732 364.636H551.407H601.453"
           stroke="#BAE6FD"
-          strokeOpacity="0.7"
           strokeMiterlimit="10"
+          strokeOpacity="0.7"
         />
         <g filter="url(#filter0_b_146_7444)">
           <path
@@ -128,15 +139,18 @@ export const TradingBrands = () => {
           stroke="#E0F2FE"
         />
         <mask
+          height="35"
           id="mask0_146_7444"
-          style={{ maskType: "luminance" }}
           maskUnits="userSpaceOnUse"
+          style={{ maskType: 'luminance' }}
+          width="91"
           x="333"
           y="341"
-          width="91"
-          height="35"
         >
-          <path d="M423.389 341.819H333.971V375.498H423.389V341.819Z" fill="white" />
+          <path
+            d="M423.389 341.819H333.971V375.498H423.389V341.819Z"
+            fill="white"
+          />
         </mask>
         <g mask="url(#mask0_146_7444)">
           <path
@@ -181,15 +195,18 @@ export const TradingBrands = () => {
           stroke="#E0F2FE"
         />
         <mask
+          height="16"
           id="mask1_146_7444"
-          style={{ maskType: "luminance" }}
           maskUnits="userSpaceOnUse"
+          style={{ maskType: 'luminance' }}
+          width="98"
           x="48"
           y="359"
-          width="98"
-          height="16"
         >
-          <path d="M145.892 359.21H48.9446V374.179H145.892V359.21Z" fill="white" />
+          <path
+            d="M145.892 359.21H48.9446V374.179H145.892V359.21Z"
+            fill="white"
+          />
         </mask>
         <g mask="url(#mask1_146_7444)">
           <path
@@ -224,34 +241,37 @@ export const TradingBrands = () => {
           stroke="#E0F2FE"
         />
         <path
-          fillRule="evenodd"
           clipRule="evenodd"
           d="M624.767 358.696L624.748 374.824L620.4 373.421V354.467L625.953 355.927C629.502 356.872 631.676 358.724 631.638 361.951C631.601 365.712 629.85 367.218 626.443 366.236V358.827C626.443 357.929 624.767 357.882 624.767 358.705V358.696Z"
           fill="#DE0029"
+          fillRule="evenodd"
         />
         <path
-          fillRule="evenodd"
           clipRule="evenodd"
           d="M618.404 370.287L616.353 370.97C615.025 371.428 613.896 370.352 615.11 369.913L616.098 369.557L612.371 368.379C611.223 368.762 610.14 369.595 610.216 370.755C610.282 371.934 612.992 372.214 615.072 372.551C617.021 372.869 618.781 372.691 620.39 372.13V370.914L618.395 370.278L618.404 370.287ZM624.786 374.824L628.589 373.505L624.758 372.289V374.731L624.795 374.815L624.786 374.824Z"
           fill="#F3C202"
+          fillRule="evenodd"
         />
         <path
-          fillRule="evenodd"
           clipRule="evenodd"
           d="M634.895 371.288L634.97 371.269C636.636 370.689 637.342 369.885 637.164 369.127C636.881 367.864 634.848 367.181 631.723 366.947C629.483 366.788 627.271 367.284 625.116 368.023L624.758 368.145L628.627 369.342L630.886 368.584C633.257 368.145 634.208 368.921 631.93 369.641L630.801 370.025L634.905 371.288H634.895ZM620.4 365.703L618.687 366.283L620.4 366.807V365.703Z"
           fill="#326DB3"
+          fillRule="evenodd"
         />
         <path
-          fillRule="evenodd"
           clipRule="evenodd"
           d="M628.589 373.505L634.895 371.288L630.791 370.025L624.749 372.083V372.298L628.579 373.515L628.589 373.505ZM620.41 369.623L618.414 370.287L620.41 370.923V369.623ZM624.758 370.661V368.145L628.627 369.342L624.758 370.661ZM616.117 369.567L620.41 368.042V366.807L618.696 366.283L612.475 368.369C612.475 368.369 612.418 368.388 612.39 368.388L616.117 369.567Z"
           fill="#00AA9E"
+          fillRule="evenodd"
         />
         <path
           d="M643.027 357.966V367.406H644.515V358.874H645.889C645.889 358.874 646.886 358.874 647.225 359.313C647.517 359.688 647.564 360.37 647.564 360.838C647.564 361.334 647.536 362.092 647.367 362.372C647.112 362.803 646.698 362.887 646.322 362.887H645.418V363.729H646.717C646.717 363.729 647.894 363.776 648.402 363.271C649.023 362.644 649.183 361.802 649.183 360.679C649.183 359.65 648.807 358.621 648.044 358.275C647.414 357.985 646.275 357.985 646.275 357.985H643.037L643.027 357.966Z"
           fill="black"
         />
-        <path d="M650.341 367.406H651.828V357.966H650.341V367.406Z" fill="black" />
+        <path
+          d="M650.341 367.406H651.828V357.966H650.341V367.406Z"
+          fill="black"
+        />
         <path
           d="M659.715 360.174L662.426 367.237L660.873 371.026H662.106L666.586 360.174H665.212L663.254 365.469L661.438 360.174H659.715Z"
           fill="black"
@@ -264,8 +284,14 @@ export const TradingBrands = () => {
           d="M675.782 358.874H674.305V365.806C674.305 365.806 674.342 366.442 674.38 366.657C674.418 366.882 674.738 367.406 675.594 367.406L677.128 367.378V366.489C677.128 366.489 676.714 366.517 676.46 366.517C676.206 366.517 675.895 366.498 675.848 366.068C675.792 365.637 675.792 365.132 675.792 365.132V361.053H677.467V360.165H675.792V358.864L675.782 358.874Z"
           fill="black"
         />
-        <path d="M690.089 367.406H691.567V360.165H690.089V367.406Z" fill="black" />
-        <path d="M690.089 359.285H691.567V357.976H690.089V359.285Z" fill="black" />
+        <path
+          d="M690.089 367.406H691.567V360.165H690.089V367.406Z"
+          fill="black"
+        />
+        <path
+          d="M690.089 359.285H691.567V357.976H690.089V359.285Z"
+          fill="black"
+        />
         <path
           d="M696.254 360.109C697.261 360.109 698.043 360.333 698.466 360.67C698.89 361.007 699.407 361.718 699.407 363.785C699.407 365.853 698.89 366.564 698.466 366.9C698.043 367.237 697.261 367.462 696.254 367.462C695.247 367.462 694.466 367.237 694.042 366.9C693.619 366.564 693.101 365.853 693.101 363.785C693.101 361.718 693.619 361.007 694.042 360.67C694.466 360.333 695.247 360.109 696.254 360.109ZM695.238 361.493C695.031 361.746 694.786 362.27 694.786 363.785C694.786 365.301 695.031 365.825 695.238 366.077C695.445 366.32 695.812 366.489 696.301 366.489C696.791 366.489 697.158 366.32 697.365 366.077C697.563 365.825 697.817 365.301 697.817 363.785C697.817 362.27 697.563 361.746 697.365 361.493C697.158 361.25 696.781 361.081 696.301 361.081C695.821 361.081 695.445 361.25 695.238 361.493Z"
           fill="black"
@@ -306,9 +332,18 @@ export const TradingBrands = () => {
           d="M299.955 69.4995V56.6549C299.955 53.8764 302.223 51.6311 305.009 51.6311C307.795 51.6311 309.866 53.6893 310.054 56.2994V56.6268H310.073V69.5089H312.831V56.6642C312.831 53.8857 315.099 51.6405 317.885 51.6405C320.671 51.6405 322.94 53.8951 322.94 56.6642V69.5089H325.604V56.6268C325.604 52.3515 322.121 48.8901 317.82 48.8901C315.175 48.8901 312.84 50.2092 311.429 52.2112C310.026 50.1998 307.682 48.8901 305.037 48.8901C302.873 48.8901 300.924 49.7601 299.512 51.1727L297.253 49.4233V69.4995H299.945H299.955Z"
           fill="#00A0DC"
         />
-        <path d="M419.323 43.6512H417.121V69.4995H419.323V43.6512Z" fill="#231F20" />
-        <path d="M424.688 54.2599H422.485V69.4995H424.688V54.2599Z" fill="#231F20" />
-        <path d="M424.688 48.2632H422.485V50.6488H424.688V48.2632Z" fill="#231F20" />
+        <path
+          d="M419.323 43.6512H417.121V69.4995H419.323V43.6512Z"
+          fill="#231F20"
+        />
+        <path
+          d="M424.688 54.2599H422.485V69.4995H424.688V54.2599Z"
+          fill="#231F20"
+        />
+        <path
+          d="M424.688 48.2632H422.485V50.6488H424.688V48.2632Z"
+          fill="#231F20"
+        />
         <path
           d="M434.251 53.867C432.481 53.867 430.881 54.5874 429.733 55.7381L427.888 54.2506V69.4995H430.091V60.2098C430.091 57.9459 432.011 56.1029 434.298 56.1029C436.585 56.1029 438.43 57.9459 438.43 60.2098V69.4995H440.614V60.1818C440.614 56.6923 437.762 53.8577 434.251 53.8577"
           fill="#231F20"
@@ -337,34 +372,34 @@ export const TradingBrands = () => {
           />
         </g>
         <path
-          fillRule="evenodd"
           clipRule="evenodd"
           d="M97.4185 128.082V114.582H90.4721V121.963C90.4721 123.937 88.872 125.546 86.8954 125.546C84.9188 125.546 83.3093 123.937 83.3093 121.963V85.6747H76.3535V128.072H97.4091L97.4185 128.082Z"
           fill="#FF592B"
+          fillRule="evenodd"
         />
         <path
-          fillRule="evenodd"
           clipRule="evenodd"
           d="M45.189 120.7C45.189 124.92 42.45 128.718 34.6565 128.718C26.863 128.718 24.124 123.76 24.124 120.7V114.582H31.0704V121.963C31.0704 123.937 32.6799 125.546 34.6565 125.546C36.6331 125.546 38.2332 123.891 38.2332 121.907V85.6747H45.1796V120.691L45.189 120.7Z"
           fill="#FF592B"
+          fillRule="evenodd"
         />
         <path
-          fillRule="evenodd"
           clipRule="evenodd"
           d="M71.3084 99.8104V92.5882C71.3084 87.8919 67.0446 85.6747 64.3621 85.6747H50.46V128.072H64.3621C69.5766 128.072 71.3084 124.695 71.3084 122.534V109.83C71.3084 108.034 69.4636 105.657 66.7246 105.657C69.4636 105.657 71.3084 101.915 71.3084 99.801V99.8104ZM61.6231 124.611H57.4063V107.51H61.6231C64.3621 107.51 64.3621 109.465 64.3621 116.107C64.3621 122.749 64.3621 124.611 61.6231 124.611ZM61.1995 103.936H57.4063V89.6881H61.1995C63.7315 89.6881 64.3621 90.2214 64.3621 96.8635C64.3621 103.506 63.7315 103.945 61.1995 103.945V103.936Z"
           fill="#FF592B"
+          fillRule="evenodd"
         />
         <path
-          fillRule="evenodd"
           clipRule="evenodd"
           d="M27.6067 101.897C25.3854 101.897 23.5876 103.702 23.5876 105.929C23.5876 108.155 25.3948 109.961 27.6067 109.961C29.8187 109.961 31.6258 108.155 31.6258 105.929C31.6258 103.702 29.8281 101.897 27.6067 101.897Z"
           fill="#FF592B"
+          fillRule="evenodd"
         />
         <path
-          fillRule="evenodd"
           clipRule="evenodd"
           d="M21.178 85.683L27.6067 100.343L34.0259 85.683H21.178Z"
           fill="#FF592B"
+          fillRule="evenodd"
         />
         <g filter="url(#filter4_b_146_7444)">
           <path
@@ -378,18 +413,24 @@ export const TradingBrands = () => {
           />
         </g>
         <mask
+          height="29"
           id="mask2_146_7444"
-          style={{ maskType: "luminance" }}
           maskUnits="userSpaceOnUse"
+          style={{ maskType: 'luminance' }}
+          width="91"
           x="653"
           y="93"
-          width="91"
-          height="29"
         >
-          <path d="M743.411 93.1682H653.993V121.234H743.411V93.1682Z" fill="white" />
+          <path
+            d="M743.411 93.1682H653.993V121.234H743.411V93.1682Z"
+            fill="white"
+          />
         </mask>
         <g mask="url(#mask2_146_7444)">
-          <path d="M654.031 113.001V93.6266H657.335V113.001H654.031Z" fill="black" />
+          <path
+            d="M654.031 113.001V93.6266H657.335V113.001H654.031Z"
+            fill="black"
+          />
           <path
             d="M665.777 98.9404C661.551 98.9404 658.624 102.299 658.624 106.134C658.624 110.419 661.805 113.375 665.815 113.375C669.825 113.375 672.921 110.475 672.921 106.125C672.921 102.467 670.182 98.9404 665.787 98.9404H665.777ZM665.74 102.224C667.952 102.224 669.58 104.002 669.58 106.144C669.58 108.417 667.782 110.082 665.796 110.082C663.453 110.082 661.965 108.165 661.965 106.153C661.965 103.945 663.631 102.224 665.73 102.224H665.74Z"
             fill="black"
@@ -402,7 +443,10 @@ export const TradingBrands = () => {
             d="M684.988 113.946C684.988 116.219 683.191 117.894 681.205 117.894C678.861 117.894 677.374 115.957 677.374 113.946H674.023C674.023 118.231 677.204 121.187 681.214 121.187C685.224 121.187 688.311 118.296 688.311 113.946H684.979H684.988Z"
             fill="black"
           />
-          <path d="M689.657 113.001V99.3427H692.96V113.001H689.657Z" fill="black" />
+          <path
+            d="M689.657 113.001V99.3427H692.96V113.001H689.657Z"
+            fill="black"
+          />
           <path
             d="M696.161 113.001V102.402H694.391V99.3426H696.161V95.1515H699.464V99.3426H701.281V102.402H699.464V113.001H696.161Z"
             fill="black"
@@ -427,79 +471,124 @@ export const TradingBrands = () => {
       </g>
       <defs>
         <filter
+          colorInterpolationFilters="sRGB"
+          filterUnits="userSpaceOnUse"
+          height="165.875"
           id="filter0_b_146_7444"
+          width="285.042"
           x="236.479"
           y="-24"
-          width="285.042"
-          height="165.875"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImageFix" stdDeviation="12" />
-          <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_146_7444" />
-          <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_146_7444" result="shape" />
+          <feComposite
+            in2="SourceAlpha"
+            operator="in"
+            result="effect1_backgroundBlur_146_7444"
+          />
+          <feBlend
+            in="SourceGraphic"
+            in2="effect1_backgroundBlur_146_7444"
+            mode="normal"
+            result="shape"
+          />
         </filter>
         <filter
+          colorInterpolationFilters="sRGB"
+          filterUnits="userSpaceOnUse"
+          height="165.875"
           id="filter1_b_146_7444"
+          width="166.596"
           x="111.576"
           y="111.238"
-          width="166.596"
-          height="165.875"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImageFix" stdDeviation="12" />
-          <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_146_7444" />
-          <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_146_7444" result="shape" />
+          <feComposite
+            in2="SourceAlpha"
+            operator="in"
+            result="effect1_backgroundBlur_146_7444"
+          />
+          <feBlend
+            in="SourceGraphic"
+            in2="effect1_backgroundBlur_146_7444"
+            mode="normal"
+            result="shape"
+          />
         </filter>
         <filter
+          colorInterpolationFilters="sRGB"
+          filterUnits="userSpaceOnUse"
+          height="165.875"
           id="filter2_b_146_7444"
+          width="166.596"
           x="479.818"
           y="111.238"
-          width="166.596"
-          height="165.875"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImageFix" stdDeviation="12" />
-          <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_146_7444" />
-          <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_146_7444" result="shape" />
+          <feComposite
+            in2="SourceAlpha"
+            operator="in"
+            result="effect1_backgroundBlur_146_7444"
+          />
+          <feBlend
+            in="SourceGraphic"
+            in2="effect1_backgroundBlur_146_7444"
+            mode="normal"
+            result="shape"
+          />
         </filter>
         <filter
+          colorInterpolationFilters="sRGB"
+          filterUnits="userSpaceOnUse"
+          height="165.875"
           id="filter3_b_146_7444"
+          width="166.596"
           x="-24"
           y="24.2634"
-          width="166.596"
-          height="165.875"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImageFix" stdDeviation="12" />
-          <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_146_7444" />
-          <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_146_7444" result="shape" />
+          <feComposite
+            in2="SourceAlpha"
+            operator="in"
+            result="effect1_backgroundBlur_146_7444"
+          />
+          <feBlend
+            in="SourceGraphic"
+            in2="effect1_backgroundBlur_146_7444"
+            mode="normal"
+            result="shape"
+          />
         </filter>
         <filter
+          colorInterpolationFilters="sRGB"
+          filterUnits="userSpaceOnUse"
+          height="165.875"
           id="filter4_b_146_7444"
+          width="166.596"
           x="615.404"
           y="24.2634"
-          width="166.596"
-          height="165.875"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImageFix" stdDeviation="12" />
-          <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_146_7444" />
-          <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_146_7444" result="shape" />
+          <feComposite
+            in2="SourceAlpha"
+            operator="in"
+            result="effect1_backgroundBlur_146_7444"
+          />
+          <feBlend
+            in="SourceGraphic"
+            in2="effect1_backgroundBlur_146_7444"
+            mode="normal"
+            result="shape"
+          />
         </filter>
         <clipPath id="clip0_146_7444">
-          <rect width="758" height="569" fill="white" />
+          <rect fill="white" height="569" width="758" />
         </clipPath>
       </defs>
     </svg>
-  );
-};
+  )
+}
