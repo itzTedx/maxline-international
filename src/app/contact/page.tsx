@@ -1,8 +1,10 @@
-import { Metadata } from "next";
 import { Suspense } from "react";
+import { Metadata } from "next";
+
+import { LoadingSpinner } from "@/components/loading-spinner";
 
 import { Grid } from "@/assets/grid";
-import { LoadingSpinner } from "@/components/loading-spinner";
+
 import { ContactCard } from "@/modules/contact/contact-cards";
 import ContactForm from "@/modules/contact/form/contact-form";
 import { Header } from "@/modules/contact/header";
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main className="relative">
-      <Grid className="absolute -top-20 h-auto w-full rotate-180 opacity-50" />
+      <Grid className="-top-20 absolute h-auto w-full rotate-180 opacity-50" />
       <Header />
 
       <ContactCard />
