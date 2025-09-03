@@ -3,10 +3,10 @@ import dynamic from "next/dynamic";
 import { Suspense } from "react";
 
 import { LoadingSpinner } from "@/components/loading-spinner";
-import { HeroBanner } from "@/features/about/hero-banner";
+import { HeroBanner } from "@/modules/about/hero-banner";
 
 const Overview = dynamic(
-  () => import("@/features/about/overview").then((mod) => mod.Overview),
+  () => import("@/modules/about/overview").then((mod) => mod.Overview),
   {
     loading: () => <LoadingSpinner />,
     ssr: true,
@@ -14,7 +14,7 @@ const Overview = dynamic(
 );
 
 const CoreValues = dynamic(
-  () => import("@/features/about/core-values").then((mod) => mod.CoreValues),
+  () => import("@/modules/about/core-values").then((mod) => mod.CoreValues),
   {
     loading: () => <LoadingSpinner />,
     ssr: true,
@@ -23,7 +23,7 @@ const CoreValues = dynamic(
 
 const MissionVision = dynamic(
   () =>
-    import("@/features/about/mission-vision").then((mod) => mod.MissionVision),
+    import("@/modules/about/mission-vision").then((mod) => mod.MissionVision),
   {
     loading: () => <LoadingSpinner />,
     ssr: true,
@@ -31,20 +31,20 @@ const MissionVision = dynamic(
 );
 
 const AboutUs = dynamic(
-  () => import("@/features/about/about-us").then((mod) => mod.AboutUs),
+  () => import("@/modules/about/about-us").then((mod) => mod.AboutUs),
   {
     loading: () => <LoadingSpinner />,
     ssr: true,
   }
 );
 
-const WhyChooseUs = dynamic(() => import("@/features/about/why-us"), {
+const WhyChooseUs = dynamic(() => import("@/modules/about/why-us"), {
   loading: () => <LoadingSpinner />,
   ssr: true,
 });
 
 const Teams = dynamic(
-  () => import("@/features/about/team").then((mod) => mod.Teams),
+  () => import("@/modules/about/team").then((mod) => mod.Teams),
   {
     loading: () => <LoadingSpinner />,
     ssr: true,
@@ -52,7 +52,7 @@ const Teams = dynamic(
 );
 
 const Brands = dynamic(() =>
-  import("@/features/home/brands").then((mod) => mod.Brands)
+  import("@/modules/home").then((mod) => mod.Brands)
 );
 
 const BASE_URL = "https://maxline-international.com";

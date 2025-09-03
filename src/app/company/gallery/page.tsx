@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 import Image from "next/image";
 
-import { GALLERY } from "@/features/gallery/constant";
 import { cn } from "@/lib/utils";
+import { GALLERY } from "@/modules/gallery/constant";
 
 export const metadata: Metadata = {
   title: "Project Gallery & Achievements | Industrial Excellence | Maxline",

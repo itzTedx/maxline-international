@@ -3,10 +3,10 @@ import { Suspense } from "react";
 
 import { Grid } from "@/assets/grid";
 import { LoadingSpinner } from "@/components/loading-spinner";
-import { ContactCard } from "@/features/contact/contact-cards";
-import ContactForm from "@/features/contact/form/contact-form";
-import { Header } from "@/features/contact/header";
-import { Faq } from "@/features/home/faq";
+import { ContactCard } from "@/modules/contact/contact-cards";
+import ContactForm from "@/modules/contact/form/contact-form";
+import { Header } from "@/modules/contact/header";
+import { Faq } from "@/modules/home";
 
 export const metadata: Metadata = {
   title: "Contact Us | Maxline",
