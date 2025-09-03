@@ -1,10 +1,8 @@
-"use client";
-
 import Image from "next/image";
-import { useState } from "react";
 
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogFooter,
@@ -14,10 +12,15 @@ import {
 
 import { Button } from "../ui/button";
 
-export function PopupBanner() {
-  const [isOpen, setIsOpen] = useState(true);
+interface Props {
+  enable: boolean;
+}
+
+export function PopupBanner({ enable }: Props) {
+  if (!enable) return null;
+
   return (
-    <Dialog open={isOpen} onOpenChange={setIsOpen}>
+    <Dialog>
       <DialogContent
         className="max-w-md gap-0 rounded-md p-0 sm:max-w-4xl"
         style={{
@@ -84,7 +87,9 @@ export function PopupBanner() {
           </div>
         </div>
         <DialogFooter className="md:hidden">
-          <Button onClick={() => setIsOpen(false)}>Close</Button>
+          <DialogClose asChild>
+            <Button>Close</Button>
+          </DialogClose>
         </DialogFooter>
       </DialogContent>
     </Dialog>

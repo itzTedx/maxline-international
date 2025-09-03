@@ -68,7 +68,7 @@ export default function RootLayout({
       >
         <div data-vaul-drawer-wrapper className="bg-background">
           <NextTopLoader />
-          <PopupBanner />
+          <PopupBanner enable={false} />
           <Navbar />
           {children}
           {/* <FloatingWhatsapp /> */}
