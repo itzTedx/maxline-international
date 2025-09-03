@@ -1,3 +1,5 @@
+import { Service } from "../types";
+
 export const FEEDBACKS = [
   {
     title: "Reliable and Efficient Services!",
@@ -41,21 +43,6 @@ export const FEEDBACKS = [
   },
 ];
 
-// ARAMCO
-// ADNOC
-// SAIPEM
-// EMERSON
-// RIYADH METRO
-// RIYADH MUNICIPALITY
-// MOI- JIZAN,KSA
-// AL BHAVANI
-// MOI- TABUK
-// NEOM
-// QIDIYA WATER PARK
-// ACCOR HOTELS GROUP
-// ALEC
-// Sierra Leone gov
-// JUMEIRAH GROUP
 
 export const LOGOS = [
   {
@@ -94,8 +81,26 @@ export const LOGOS = [
     name: "Jumeirah Group",
     url: "/images/clients/jumeirah.png",
   },
-  // {
-  //   name: "Shure",
-  //   url: "/images/clients/shure.png",
-  // },
+
 ];
+
+export const SERVICES: Service[] = [
+  {
+    title: "Value Added Distributions",
+    href: "/distributions",
+    image: "/images/distributions.webp",
+    imageAlt: "Our distribution services and capabilities",
+  },
+  {
+    title: "Trading",
+    href: "/tradings",
+    image: "/images/trading.webp",
+    imageAlt: "Our trading solutions and expertise",
+  },
+  {
+    title: "Services",
+    href: "/services",
+    image: "/images/services.webp",
+    imageAlt: "Our professional IT services offering",
+  },
+] as const;

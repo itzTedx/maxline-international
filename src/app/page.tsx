@@ -4,21 +4,17 @@ import { Hero } from "@/modules/home/hero";
 
 // Dynamic imports for better code splitting
 const Features = dynamic(() =>
-  import("@/features/home/features").then((mod) => mod.Features)
+  import("@/modules/home").then((mod) => mod.Features)
 );
 const Services = dynamic(() =>
-  import("@/features/home/services").then((mod) => mod.Services)
+  import("@/modules/home").then((mod) => mod.Services)
 );
-// const Feedback = dynamic(() =>
-//   import("@/features/home/feedback").then((mod) => mod.CustomerReviews)
-// );
 const Gallery = dynamic(() =>
-  import("@/features/home/gallery").then((mod) => mod.Gallery)
+  import("@/modules/home").then((mod) => mod.Gallery)
 );
 const Brands = dynamic(() =>
-  import("@/features/home/brands").then((mod) => mod.Brands)
+  import("@/modules/home").then((mod) => mod.Brands)
 );
-// const Faq = dynamic(() => import("@/features/home/faq").then((mod) => mod.Faq));
 
 export default function Home() {
   return (
@@ -26,11 +22,8 @@ export default function Home() {
       <Hero />
       <Features />
       <Services />
-      {/* <Feedback /> */}
       <Gallery />
       <Brands />
-
-      {/* <Faq /> */}
     </main>
   );
 }

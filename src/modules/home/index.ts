@@ -10,6 +10,9 @@ export * from './services';
 // Data Constants
 export * from './data/constant';
 
+// Types
+export * from './types';
+
 // Components 
 export * from './components/avatar-group';
 export * from './components/faq-item';

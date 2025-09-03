@@ -10,13 +10,7 @@ import HoverCard from "@/components/animations/hover-tilt-card";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-// Move types and constants outside component for better performance
-type Service = {
-  title: string;
-  href: string;
-  image: string;
-  imageAlt: string;
-};
+import { Service } from "./types";
 
 // Static blur data URL - no need for useMemo since it's constant
 const BLUR_DATA_URL =
@@ -100,7 +94,7 @@ export const Services = memo(() => (
 Services.displayName = "Services";
 
 // Type-safe services constant
-const SERVICES: readonly Service[] = [
+const SERVICES: Service[] = [
   {
     title: "Value Added Distributions",
     href: "/distributions",
