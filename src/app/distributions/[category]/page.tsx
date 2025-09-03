@@ -1,25 +1,25 @@
-import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { Metadata } from 'next'
+import { notFound } from 'next/navigation'
 
-import { ItemCard } from "@/components/global/items";
-import { slugify } from "@/lib/utils";
+import { ItemCard } from '@/components/global/items'
 
-import { DATA } from "../constants";
+import { slugify } from '@/lib/utils'
 
-interface PageProps {
-  params: {
-    category: string;
-  };
+import { DATA } from '../constants'
+
+type Params = Promise<{ category: string }>
+interface Props {
+  params: Params
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { category } = await params;
-  const data = DATA.find((d) => slugify(d.category) === category);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { category } = await params
+  const data = DATA.find((d) => slugify(d.category) === category)
 
   if (!data) {
     return {
-      title: "Category Not Found",
-    };
+      title: 'Category Not Found',
+    }
   }
 
   return {
@@ -30,21 +30,21 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: `Browse our ${data.category} product range and brands`,
     },
     alternates: { canonical: `/distributions/${category}` },
-  };
+  }
 }
 
 export function generateStaticParams() {
   return DATA.map((category) => ({
     category: slugify(category.category),
-  }));
+  }))
 }
 
-export default async function Page({ params }: PageProps) {
-  const { category } = await params;
-  const data = DATA.find((d) => slugify(d.category) === category);
+export default async function Page({ params }: Props) {
+  const { category } = await params
+  const data = DATA.find((d) => slugify(d.category) === category)
 
   if (!data) {
-    notFound();
+    notFound()
   }
 
   return (
@@ -52,9 +52,9 @@ export default async function Page({ params }: PageProps) {
       <section className="container space-y-12 py-12 md:space-y-16 md:py-32">
         <h1 className="text-center text-4xl">{data.category}</h1>
         {data.brands.map((brand) => (
-          <ItemCard key={brand.label} data={brand} />
+          <ItemCard data={brand} key={brand.label} />
         ))}
       </section>
     </main>
-  );
+  )
 }
