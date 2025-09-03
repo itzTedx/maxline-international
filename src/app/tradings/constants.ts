@@ -61,7 +61,8 @@ Home Appliances: Transform your space with Samsung's smart refrigerators, washer
     logo: "/brands/dell.svg",
     label: "dell",
     image: "/images/trading/dell.webp",
-    description: `Maxline is your trusted distributor for genuine Dell products, offering a wide range of high-performance solutions, including laptops, desktops, servers, and accessories. We ensure authenticity, competitive pricing, and reliable supply, helping businesses and individuals stay ahead with the latest Dell innovations. With fast delivery and dedicated customer support, Maxline is your go-to partner for upgrading your IT infrastructure with top-tier Dell technology.`,
+    description:
+      "Maxline is your trusted distributor for genuine Dell products, offering a wide range of high-performance solutions, including laptops, desktops, servers, and accessories. We ensure authenticity, competitive pricing, and reliable supply, helping businesses and individuals stay ahead with the latest Dell innovations. With fast delivery and dedicated customer support, Maxline is your go-to partner for upgrading your IT infrastructure with top-tier Dell technology.",
   },
   {
     logo: "/brands/lenovo.png",
