@@ -19,65 +19,41 @@ const projectPoint = (lat: number, lng: number) => {
   return { x, y };
 };
 
-const createCurvedPath = (
-  start: { x: number; y: number },
-  end: { x: number; y: number }
-) => {
+const createCurvedPath = (start: { x: number; y: number }, end: { x: number; y: number }) => {
   const midX = (start.x + end.x) / 2;
   const midY = Math.min(start.y, end.y) - 50;
   return `M ${start.x} ${start.y} Q ${midX} ${midY} ${end.x} ${end.y}`;
 };
 
-const AnimatedPoint = memo(
-  ({ x, y, color }: { x: number; y: number; color: string }) => (
-    <>
-      <circle cx={x} cy={y} r="2" fill={color} />
-      <circle cx={x} cy={y} r="2" fill={color} opacity="0.5">
-        <animate
-          attributeName="r"
-          from="2"
-          to="8"
-          dur="1.5s"
-          begin="0s"
-          repeatCount="indefinite"
-        />
-        <animate
-          attributeName="opacity"
-          from="0.5"
-          to="0"
-          dur="1.5s"
-          begin="0s"
-          repeatCount="indefinite"
-        />
-      </circle>
-    </>
-  )
-);
+const AnimatedPoint = memo(({ x, y, color }: { x: number; y: number; color: string }) => (
+  <>
+    <circle cx={x} cy={y} r="2" fill={color} />
+    <circle cx={x} cy={y} r="2" fill={color} opacity="0.5">
+      <animate attributeName="r" from="2" to="8" dur="1.5s" begin="0s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.5" to="0" dur="1.5s" begin="0s" repeatCount="indefinite" />
+    </circle>
+  </>
+));
 AnimatedPoint.displayName = "AnimatedPoint";
 
-const AnimatedPath = memo(
-  ({ path, delay }: { path: string; lineColor: string; delay: number }) => (
-    <motion.path
-      d={path}
-      fill="none"
-      stroke="url(#path-gradient)"
-      strokeWidth="1"
-      initial={{ pathLength: 0 }}
-      animate={{ pathLength: 1 }}
-      transition={{
-        duration: 1,
-        delay: delay,
-        ease: "easeOut",
-      }}
-    />
-  )
-);
+const AnimatedPath = memo(({ path, delay }: { path: string; lineColor: string; delay: number }) => (
+  <motion.path
+    d={path}
+    fill="none"
+    stroke="url(#path-gradient)"
+    strokeWidth="1"
+    initial={{ pathLength: 0 }}
+    animate={{ pathLength: 1 }}
+    transition={{
+      duration: 1,
+      delay: delay,
+      ease: "easeOut",
+    }}
+  />
+));
 AnimatedPath.displayName = "AnimatedPath";
 
-export default function WorldMap({
-  dots = [],
-  lineColor = "#0ea5e9",
-}: MapProps) {
+export default function WorldMap({ dots = [], lineColor = "#0ea5e9" }: MapProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const [mapSvg, setMapSvg] = useState<string>("");
 
@@ -107,15 +83,10 @@ export default function WorldMap({
     [dots]
   );
 
-  const paths = useMemo(
-    () => projectedDots.map((dot) => createCurvedPath(dot.start, dot.end)),
-    [projectedDots]
-  );
+  const paths = useMemo(() => projectedDots.map((dot) => createCurvedPath(dot.start, dot.end)), [projectedDots]);
 
   if (!mapSvg) {
-    return (
-      <div className="relative aspect-[2/1] w-full animate-pulse rounded-lg bg-gray-100" />
-    );
+    return <div className="relative aspect-[2/1] w-full animate-pulse rounded-lg bg-gray-100" />;
   }
 
   return (
@@ -151,11 +122,7 @@ export default function WorldMap({
         {projectedDots.map((dot, i) => (
           <g key={`points-group-${i}`}>
             <g key={`start-${i}`}>
-              <AnimatedPoint
-                x={dot.start.x}
-                y={dot.start.y}
-                color={lineColor}
-              />
+              <AnimatedPoint x={dot.start.x} y={dot.start.y} color={lineColor} />
             </g>
             <g key={`end-${i}`}>
               <AnimatedPoint x={dot.end.x} y={dot.end.y} color={lineColor} />

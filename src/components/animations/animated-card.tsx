@@ -7,8 +7,7 @@ import { ArrowUpRightIcon } from "lucide-react";
 import { useMouse } from "@/hooks/use-mouse-position";
 import { cn } from "@/lib/utils";
 
-const gradientBackground =
-  "linear-gradient(135deg, #3bacf2, #6992f9, #63ebf2, #3ff5b2)";
+const gradientBackground = "linear-gradient(135deg, #3bacf2, #6992f9, #63ebf2, #3ff5b2)";
 
 interface Props {
   withArrow?: boolean;
@@ -60,9 +59,7 @@ export const AnimatedCard = ({
       <div
         className={cn(
           "absolute -translate-x-1/2 -translate-y-1/2 transform-gpu rounded-full transition-transform duration-500 group-hover:scale-[3]",
-          mouse.elementX === null || mouse.elementY === null
-            ? "opacity-0"
-            : "opacity-100"
+          mouse.elementX === null || mouse.elementY === null ? "opacity-0" : "opacity-100"
         )}
         style={circleStyle}
       />

@@ -9,8 +9,7 @@ export const metadata: Metadata = {
   title: "Leadership Team - Meet the Experts at Maxline Globals",
   description:
     "Meet Maxline Globals' leadership team. Led by Ajith Kumar and Saji Thomas, our experienced professionals bring decades of expertise in global services, financial management, and business innovation.",
-  keywords:
-    "Maxline Globals leadership, executive team, Ajith Kumar, Saji Thomas, global services management",
+  keywords: "Maxline Globals leadership, executive team, Ajith Kumar, Saji Thomas, global services management",
   alternates: { canonical: "/company/team" },
   openGraph: {
     title: "Leadership Team - Meet the Experts at Maxline Globals",
@@ -39,8 +38,7 @@ const structuredData = {
       name: "Ajith Kumar",
       jobTitle: "Chairman and Managing Director",
       image: "/images/avatar/ajith-kumar.webp",
-      description:
-        "Visionary leader driving innovation and growth at Maxline Globals",
+      description: "Visionary leader driving innovation and growth at Maxline Globals",
     },
     {
       "@type": "Person",
@@ -55,25 +53,15 @@ const structuredData = {
 export default function TeamPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <main>
         <header className="relative m-3 flex items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-b from-sky-950 to-[#062438] pb-20 pt-40">
           <div className="z-10 space-y-6 text-center">
             <h1 className="text-5xl text-white">
               Meet Our Leadership Team
-              <span className="mt-2 block text-2xl">
-                Driving Innovation & Excellence
-              </span>
+              <span className="mt-2 block text-2xl">Driving Innovation & Excellence</span>
             </h1>
-            <Button
-              variant="primary"
-              size="lg"
-              aria-label="Contact our team"
-              asChild
-            >
+            <Button variant="primary" size="lg" aria-label="Contact our team" asChild>
               <Link href="/contact">Contact us now</Link>
             </Button>
           </div>
@@ -107,13 +95,11 @@ export default function TeamPage() {
               <p className="text-neutral-600">Chairman and Managing Director</p>
             </div>
             <p className="leading-relaxed text-neutral-700">
-              Ajith Kumar, our Chairman and Managing Director, has been the
-              driving force behind Maxline Globals&apos; success for over two
-              decades. His visionary leadership and extensive industry
-              experience have transformed our company into a leading player in
-              global services. Under his guidance, we maintain unwavering
-              commitment to innovation, excellence, and client satisfaction
-              while fostering a culture of integrity and collaboration.
+              Ajith Kumar, our Chairman and Managing Director, has been the driving force behind Maxline Globals&apos;
+              success for over two decades. His visionary leadership and extensive industry experience have transformed
+              our company into a leading player in global services. Under his guidance, we maintain unwavering
+              commitment to innovation, excellence, and client satisfaction while fostering a culture of integrity and
+              collaboration.
             </p>
           </article>
           <article className="space-y-4">
@@ -131,13 +117,11 @@ export default function TeamPage() {
               <p className="text-neutral-600">Chief Financial Officer</p>
             </div>
             <p className="leading-relaxed text-neutral-700">
-              As Chief Financial Officer at Maxline Globals, Saji Thomas brings
-              over 20 years of financial expertise to our leadership team. He
-              oversees the company&apos;s financial strategy, ensuring stability
-              and sustainable growth through expert budgeting, forecasting, and
-              risk management practices. His strategic vision and financial
-              acumen have been instrumental in strengthening our market position
-              and driving long-term success.
+              As Chief Financial Officer at Maxline Globals, Saji Thomas brings over 20 years of financial expertise to
+              our leadership team. He oversees the company&apos;s financial strategy, ensuring stability and sustainable
+              growth through expert budgeting, forecasting, and risk management practices. His strategic vision and
+              financial acumen have been instrumental in strengthening our market position and driving long-term
+              success.
             </p>
           </article>
         </section>

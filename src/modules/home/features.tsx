@@ -1,13 +1,6 @@
 import { memo, useMemo } from "react";
 
-import {
-  IconClock24,
-  IconClogHand,
-  IconCloudService,
-  IconComputer,
-  IconData,
-  IconSecurity,
-} from "@/assets/icons";
+import { IconClock24, IconClogHand, IconCloudService, IconComputer, IconData, IconSecurity } from "@/assets/icons";
 import { AnimatedCard } from "@/components/animations/animated-card";
 import { AuroraText } from "@/components/animations/aurora-text";
 import { cn } from "@/lib/utils";
@@ -23,14 +16,7 @@ interface FeatureCardProps {
 }
 
 const FeatureCard = memo(
-  ({
-    title,
-    Icon,
-    description,
-    isFirst,
-    isLast,
-    ariaLabel,
-  }: FeatureCardProps) => (
+  ({ title, Icon, description, isFirst, isLast, ariaLabel }: FeatureCardProps) => (
     <AnimatedCard
       key={title}
       className={cn(
@@ -41,9 +27,7 @@ const FeatureCard = memo(
             ? "md:col-span-10 lg:col-span-5"
             : "md:col-span-5 lg:col-span-3"
       )}
-      contentClassName={`h-full p-6 justify-between ${
-        isFirst ? "group-first:bg-sky-700/70" : ""
-      }`}
+      contentClassName={`h-full p-6 justify-between ${isFirst ? "group-first:bg-sky-700/70" : ""}`}
       aria-label={ariaLabel}
       role="listitem"
     >
@@ -51,12 +35,8 @@ const FeatureCard = memo(
         <Icon className="size-12 text-slate-800 md:size-14" />
       </div>
       <div className="mt-4 space-y-3">
-        <h3 className="whitespace-pre-line text-balance font-poly-sans text-2xl md:text-2xl">
-          {title}
-        </h3>
-        <p className="text-pretty leading-relaxed md:whitespace-pre-line md:text-balance md:text-lg">
-          {description}
-        </p>
+        <h3 className="whitespace-pre-line text-balance font-poly-sans text-2xl md:text-2xl">{title}</h3>
+        <p className="text-pretty leading-relaxed md:whitespace-pre-line md:text-balance md:text-lg">{description}</p>
       </div>
     </AnimatedCard>
   ),
@@ -108,8 +88,7 @@ export function Features() {
       },
       {
         title: "24/7 Technical Support & Maintenance",
-        description:
-          "Reliable support and maintenance to ensure optimal performance of your ICT, ELV, and AV systems.",
+        description: "Reliable support and maintenance to ensure optimal performance of your ICT, ELV, and AV systems.",
         Icon: IconClock24,
       },
     ],
@@ -129,15 +108,8 @@ export function Features() {
   };
 
   return (
-    <section
-      id="features"
-      className="container py-16 md:py-32"
-      aria-labelledby="features-heading"
-    >
-      <h2
-        id="features-heading"
-        className="pb-9 text-center text-3xl md:mx-auto md:w-fit md:pb-20 md:text-5xl"
-      >
+    <section id="features" className="container py-16 md:py-32" aria-labelledby="features-heading">
+      <h2 id="features-heading" className="pb-9 text-center text-3xl md:mx-auto md:w-fit md:pb-20 md:text-5xl">
         <AuroraText>Foundational</AuroraText> Values
         <br />
         for Sustainable Growth
@@ -154,10 +126,7 @@ export function Features() {
           />
         ))}
       </div>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
     </section>
   );
 }

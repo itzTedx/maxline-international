@@ -5,55 +5,37 @@ import { Suspense } from "react";
 import { LoadingSpinner } from "@/components/loading-spinner";
 import { HeroBanner } from "@/modules/about/hero-banner";
 
-const Overview = dynamic(
-  () => import("@/modules/about/overview").then((mod) => mod.Overview),
-  {
-    loading: () => <LoadingSpinner />,
-    ssr: true,
-  }
-);
+const Overview = dynamic(() => import("@/modules/about/overview").then((mod) => mod.Overview), {
+  loading: () => <LoadingSpinner />,
+  ssr: true,
+});
 
-const CoreValues = dynamic(
-  () => import("@/modules/about/core-values").then((mod) => mod.CoreValues),
-  {
-    loading: () => <LoadingSpinner />,
-    ssr: true,
-  }
-);
+const CoreValues = dynamic(() => import("@/modules/about/core-values").then((mod) => mod.CoreValues), {
+  loading: () => <LoadingSpinner />,
+  ssr: true,
+});
 
-const MissionVision = dynamic(
-  () =>
-    import("@/modules/about/mission-vision").then((mod) => mod.MissionVision),
-  {
-    loading: () => <LoadingSpinner />,
-    ssr: true,
-  }
-);
+const MissionVision = dynamic(() => import("@/modules/about/mission-vision").then((mod) => mod.MissionVision), {
+  loading: () => <LoadingSpinner />,
+  ssr: true,
+});
 
-const AboutUs = dynamic(
-  () => import("@/modules/about/about-us").then((mod) => mod.AboutUs),
-  {
-    loading: () => <LoadingSpinner />,
-    ssr: true,
-  }
-);
+const AboutUs = dynamic(() => import("@/modules/about/about-us").then((mod) => mod.AboutUs), {
+  loading: () => <LoadingSpinner />,
+  ssr: true,
+});
 
 const WhyChooseUs = dynamic(() => import("@/modules/about/why-us"), {
   loading: () => <LoadingSpinner />,
   ssr: true,
 });
 
-const Teams = dynamic(
-  () => import("@/modules/about/team").then((mod) => mod.Teams),
-  {
-    loading: () => <LoadingSpinner />,
-    ssr: true,
-  }
-);
+const Teams = dynamic(() => import("@/modules/about/team").then((mod) => mod.Teams), {
+  loading: () => <LoadingSpinner />,
+  ssr: true,
+});
 
-const Brands = dynamic(() =>
-  import("@/modules/home").then((mod) => mod.Brands)
-);
+const Brands = dynamic(() => import("@/modules/home").then((mod) => mod.Brands));
 
 const BASE_URL = "https://maxline-international.com";
 
@@ -84,8 +66,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About Maxline | Leading Provider of Engineering Solutions",
-    description:
-      "Discover Maxline's journey, core values, and expert team. Leading engineering solutions provider.",
+    description: "Discover Maxline's journey, core values, and expert team. Leading engineering solutions provider.",
     images: ["/images/maxline-about-og.jpg"],
   },
 };

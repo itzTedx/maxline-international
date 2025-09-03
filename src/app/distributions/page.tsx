@@ -12,22 +12,17 @@ import { DATA, Distributor } from "./constants";
 
 // Dynamic import with no SSR for the Integrations component
 const Integrations = dynamic(
-  () =>
-    import("@/components/animations/logo-integrations").then(
-      (mod) => mod.Integrations
-    ),
+  () => import("@/components/animations/logo-integrations").then((mod) => mod.Integrations),
   { loading: LoadingSpinner }
 );
 
 export const metadata: Metadata = {
   title: "Distributions | Maxline",
   alternates: { canonical: "/distributions" },
-  description:
-    "Explore our wide range of distribution categories and partners.",
+  description: "Explore our wide range of distribution categories and partners.",
   openGraph: {
     title: "Distributions | Maxline",
-    description:
-      "Explore our wide range of distribution categories and partners.",
+    description: "Explore our wide range of distribution categories and partners.",
     type: "website",
   },
 };
@@ -51,9 +46,7 @@ export default function Distributions() {
               <div className="order-2 space-y-4 md:order-1 md:col-span-7 md:p-6 md:group-even:order-2">
                 <span className="block font-medium">{category}</span>
                 <Separator />
-                <h3 className="font-poly-sans text-3xl group-hover:text-sky-600">
-                  {title}
-                </h3>
+                <h3 className="font-poly-sans text-3xl group-hover:text-sky-600">{title}</h3>
                 <p className="text-balance text-lg">{description}</p>
               </div>
               <div className="relative order-1 aspect-[4/3] overflow-hidden rounded-2xl border bg-background md:order-2 md:col-span-5 md:group-even:order-1">

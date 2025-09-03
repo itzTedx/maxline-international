@@ -53,23 +53,13 @@ export const FollowerPointerCard = ({
       ref={ref}
       className={cn("relative", className)}
     >
-      <AnimatePresence>
-        {isInside && <FollowPointer x={x} y={y} title={title} />}
-      </AnimatePresence>
+      <AnimatePresence>{isInside && <FollowPointer x={x} y={y} title={title} />}</AnimatePresence>
       {children}
     </div>
   );
 };
 
-export const FollowPointer = ({
-  x,
-  y,
-  title,
-}: {
-  x: any;
-  y: any;
-  title?: string | React.ReactNode;
-}) => {
+export const FollowPointer = ({ x, y, title }: { x: any; y: any; title?: string | React.ReactNode }) => {
   const colors = [
     "var(--sky-500)",
     "var(--neutral-500)",
@@ -128,9 +118,7 @@ export const FollowPointer = ({
           scale: 0.5,
           opacity: 0,
         }}
-        className={
-          "min-w-max whitespace-nowrap rounded-full bg-neutral-200 px-2 py-2 text-xs text-white"
-        }
+        className={"min-w-max whitespace-nowrap rounded-full bg-neutral-200 px-2 py-2 text-xs text-white"}
       >
         {title || `William Shakespeare`}
       </motion.div>

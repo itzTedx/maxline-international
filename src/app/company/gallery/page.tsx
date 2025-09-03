@@ -30,8 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Project Gallery & Achievements | Industrial Excellence | Maxline",
-    description:
-      "Explore Maxline's showcase of successful industrial projects and engineering achievements.",
+    description: "Explore Maxline's showcase of successful industrial projects and engineering achievements.",
     images: ["/images/og-gallery.jpg"],
   },
   robots: {
@@ -50,10 +49,7 @@ export default function GalleryPage() {
         </p>
       </header>
 
-      <section
-        className="columns-2 gap-3 md:columns-4 md:gap-6"
-        aria-label="Achievement gallery"
-      >
+      <section className="columns-2 gap-3 md:columns-4 md:gap-6" aria-label="Achievement gallery">
         <video
           muted
           slot="media"

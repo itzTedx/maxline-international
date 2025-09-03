@@ -16,13 +16,7 @@ export const Header = ({ data }: Props) => {
 
         <p className="md:text-xl">{data.description}</p>
       </div>
-      <Image
-        src={data.image}
-        width={758}
-        height={569}
-        alt=""
-        className="md:col-span-7"
-      />
+      <Image src={data.image} width={758} height={569} alt="" className="md:col-span-7" />
     </header>
   );
 };

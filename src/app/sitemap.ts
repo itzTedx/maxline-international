@@ -5,12 +5,10 @@ import { NAV_DISTRIBUTIONS } from "@/components/layout/constant";
 const BASE_URL = "https://maxline-international.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const entries: MetadataRoute.Sitemap = NAV_DISTRIBUTIONS.categories.map(
-    ({ href }) => ({
-      url: `${BASE_URL}/distributions/${href}`,
-      priority: 0.8,
-    })
-  );
+  const entries: MetadataRoute.Sitemap = NAV_DISTRIBUTIONS.categories.map(({ href }) => ({
+    url: `${BASE_URL}/distributions/${href}`,
+    priority: 0.8,
+  }));
 
   return [
     {

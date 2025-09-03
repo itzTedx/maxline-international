@@ -5,8 +5,7 @@ import { Grid } from "@/assets/grid";
 import { Logo } from "@/assets/logo";
 
 const CONTACT_INFO = {
-  address:
-    "MO0753, Jebel Ali South, Jebel Ali Free Zone, Dubai, United Arab Emirates",
+  address: "MO0753, Jebel Ali South, Jebel Ali Free Zone, Dubai, United Arab Emirates",
   phone: "+971 4 294 1875",
   email: "info@maxline-international.com",
 } as const;
@@ -33,10 +32,7 @@ const LINKS = [
 ] as const;
 
 const FooterLinks = memo(({ link }: { link: (typeof LINKS)[number] }) => (
-  <nav
-    className="space-y-4 md:space-y-8"
-    aria-label={`${link.heading} navigation`}
-  >
+  <nav className="space-y-4 md:space-y-8" aria-label={`${link.heading} navigation`}>
     <h3 className="font-poly-sans text-xl font-medium">{link.heading}</h3>
     <ul className="space-y-6" role="menu">
       {link.links.map((item) => (
@@ -53,15 +49,8 @@ FooterLinks.displayName = "FooterLinks";
 
 export const Footer = memo(() => {
   return (
-    <footer
-      className="relative bg-[#032033] text-white"
-      role="contentinfo"
-      aria-label="Site footer"
-    >
-      <Grid
-        className="absolute top-0 h-auto w-full rotate-180"
-        aria-hidden="true"
-      />
+    <footer className="relative bg-[#032033] text-white" role="contentinfo" aria-label="Site footer">
+      <Grid className="absolute top-0 h-auto w-full rotate-180" aria-hidden="true" />
       <div
         itemScope
         itemType="http://schema.org/Organization"
@@ -71,15 +60,10 @@ export const Footer = memo(() => {
           <h2 className="font-poly-sans text-2xl font-medium" itemProp="name">
             MAXLINE INTERNATIONAL FZE
           </h2>
-          <p className="text-sm font-light text-white/70">
-            Trusted Global Emerging Distributor
-          </p>
-          <p
-            className="pt-3 text-lg font-light leading-loose md:pt-6"
-            itemProp="description"
-          >
-            Your trusted partner in ICT, ELV, and AV solutions. Delivering
-            innovative technology products with top-tier service and support.
+          <p className="text-sm font-light text-white/70">Trusted Global Emerging Distributor</p>
+          <p className="pt-3 text-lg font-light leading-loose md:pt-6" itemProp="description">
+            Your trusted partner in ICT, ELV, and AV solutions. Delivering innovative technology products with top-tier
+            service and support.
           </p>
         </div>
         {LINKS.map((link) => (
@@ -108,11 +92,7 @@ export const Footer = memo(() => {
               </Link>
             </li>
             <li>
-              <Link
-                href={`mailto:${CONTACT_INFO.email}`}
-                itemProp="email"
-                aria-label="Our email address"
-              >
+              <Link href={`mailto:${CONTACT_INFO.email}`} itemProp="email" aria-label="Our email address">
                 {CONTACT_INFO.email}
               </Link>
             </li>

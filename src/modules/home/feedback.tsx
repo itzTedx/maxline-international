@@ -4,13 +4,7 @@ import { memo } from "react";
 import { IconStarFilled } from "@tabler/icons-react";
 
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Separator } from "@/components/ui/separator";
 
 import { FEEDBACKS } from "./data/constant";
@@ -57,20 +51,11 @@ const ReviewCard = memo(({ feed }: { feed: (typeof FEEDBACKS)[0] }) => (
               {feed.company}
             </p>
           </div>
-          <div
-            className="flex gap-1"
-            itemProp="reviewRating"
-            itemScope
-            itemType="https://schema.org/Rating"
-          >
+          <div className="flex gap-1" itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
             <meta itemProp="ratingValue" content="5" />
             <meta itemProp="bestRating" content="5" />
             {Array.from({ length: 5 }).map((_, index) => (
-              <IconStarFilled
-                key={index}
-                className="size-4 text-yellow-400"
-                aria-hidden="true"
-              />
+              <IconStarFilled key={index} className="size-4 text-yellow-400" aria-hidden="true" />
             ))}
           </div>
         </footer>
@@ -83,17 +68,11 @@ ReviewCard.displayName = "ReviewCard";
 
 export const CustomerReviews = () => {
   return (
-    <section
-      id="reviews"
-      className="container py-24"
-      aria-label="Customer Reviews"
-    >
+    <section id="reviews" className="container py-24" aria-label="Customer Reviews">
       <div itemScope itemType="https://schema.org/ItemList">
         <Carousel className="container space-y-4 rounded-xl bg-sky-100 p-6 md:space-y-6 md:p-12">
           <header className="flex items-center justify-between">
-            <h2 className="font-poly-sans text-2xl font-medium md:text-3xl">
-              Our Client Says
-            </h2>
+            <h2 className="font-poly-sans text-2xl font-medium md:text-3xl">Our Client Says</h2>
             <div className="flex gap-x-3">
               <CarouselPrevious
                 className="!inset-shadow-[2px_2px_0_0] static translate-y-0"

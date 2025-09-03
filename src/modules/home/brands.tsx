@@ -17,12 +17,7 @@ export const Brands = () => {
         <div className="mt-14 grid grid-cols-3 place-items-center gap-9 md:grid-cols-5">
           {LOGOS.map((logo, index) => (
             <div className="relative h-4 w-24 md:h-14 md:w-36" key={index}>
-              <Image
-                fill
-                src={logo.url}
-                alt={`${logo.name} logo`}
-                className={`object-contain`}
-              />
+              <Image fill src={logo.url} alt={`${logo.name} logo`} className={`object-contain`} />
             </div>
           ))}
         </div>

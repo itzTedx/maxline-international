@@ -12,26 +12,22 @@ import { cn } from "@/lib/utils";
 const data = [
   {
     title: "Extensive Product Range",
-    content:
-      "Access a wide selection of high-quality ICT, ELV, and AV solutions from top global brands.",
+    content: "Access a wide selection of high-quality ICT, ELV, and AV solutions from top global brands.",
     srcImage: "/images/about-solution.webp",
   },
   {
     title: "Fast & Efficient Distribution",
-    content:
-      "Our strong logistics network ensures timely product delivery across multiple regions.",
+    content: "Our strong logistics network ensures timely product delivery across multiple regions.",
     srcImage: "/images/about-team.webp",
   },
   {
     title: "Expert Technical Support",
-    content:
-      "Get professional guidance and consultation from our experienced specialists.",
+    content: "Get professional guidance and consultation from our experienced specialists.",
     srcImage: "/images/about-growth.webp",
   },
   {
     title: "Scalable & Customized Solutions",
-    content:
-      "We provide tailored solutions that grow with your business needs.",
+    content: "We provide tailored solutions that grow with your business needs.",
     srcImage: "/images/about-support.webp",
   },
 ];
@@ -63,18 +59,13 @@ export function WhyChooseUs() {
           </p>
 
           <h2 className="text-lg md:col-span-3">
-            We do more than just provide ICT, ELV, and AV solutions—we build
-            lasting partnerships, drive innovation, and empower your success in
-            an ever-evolving technological landscape.
+            We do more than just provide ICT, ELV, and AV solutions—we build lasting partnerships, drive innovation, and
+            empower your success in an ever-evolving technological landscape.
           </h2>
         </div>
         <div className="grid grid-cols-1 items-center gap-8 overflow-hidden md:grid-cols-2">
           <div className="h-full">
-            <div
-              className={cn(
-                "relative h-96 w-full overflow-hidden rounded-lg md:h-[400px]"
-              )}
-            >
+            <div className={cn("relative h-96 w-full overflow-hidden rounded-lg md:h-[400px]")}>
               {data.map((item, index) => (
                 <div key={item.title} className="relative">
                   <div
@@ -84,12 +75,7 @@ export function WhyChooseUs() {
                       featureOpen > index ? "translate-y-full" : ""
                     )}
                   >
-                    <Image
-                      src="/noise-texture.jpg"
-                      fill
-                      alt=""
-                      style={{ zIndex: data.length - index }}
-                    />
+                    <Image src="/noise-texture.jpg" fill alt="" style={{ zIndex: data.length - index }} />
                   </div>
                   <Image
                     height={500}
@@ -112,12 +98,8 @@ export function WhyChooseUs() {
                     style={{ zIndex: data.length - index }}
                   >
                     <div className="absolute bottom-0 w-full bg-gradient-to-b from-[#1B1B1B]/80 to-[#3B3B3B]/80 px-6 py-4 text-white backdrop-blur-lg">
-                      <h3 className="pb-2 text-2xl font-medium">
-                        {item.title}
-                      </h3>
-                      <p className="font-light max-md:pb-3 md:text-lg">
-                        {item.content}
-                      </p>
+                      <h3 className="pb-2 text-2xl font-medium">{item.title}</h3>
+                      <p className="font-light max-md:pb-3 md:text-lg">{item.content}</p>
                     </div>
                   </div>
                 </div>
@@ -162,26 +144,13 @@ function TextComponent({
 }>) {
   return (
     <div
-      className={cn(
-        "transform-gpu rounded-lg transition-colors",
-        isOpen ? "bg-sky-500/10" : "opacity-50 saturate-0"
-      )}
+      className={cn("transform-gpu rounded-lg transition-colors", isOpen ? "bg-sky-500/10" : "opacity-50 saturate-0")}
     >
       <div className="flex w-full items-center gap-3 p-3 md:gap-4 md:p-4">
-        <div
-          className={cn(
-            "inline-flex size-8 items-center justify-center rounded-md bg-sky-500/20 text-sky-600"
-          )}
-        >
+        <div className={cn("inline-flex size-8 items-center justify-center rounded-md bg-sky-500/20 text-sky-600")}>
           <IconStar />
         </div>
-        <h2
-          className={cn(
-            "text-start text-lg font-medium text-gray-800 md:text-xl"
-          )}
-        >
-          {title}
-        </h2>
+        <h2 className={cn("text-start text-lg font-medium text-gray-800 md:text-xl")}>{title}</h2>
       </div>
       <div
         className={cn(
@@ -192,9 +161,7 @@ function TextComponent({
         <div className="w-full px-4 pb-4">
           <div className="relative h-1 w-full overflow-hidden rounded-full">
             <div
-              className={cn(
-                "absolute left-0 top-0 h-1 bg-sky-500 transition ease-out"
-              )}
+              className={cn("absolute left-0 top-0 h-1 bg-sky-500 transition ease-out")}
               style={{ width: `${loadingWidthPercent}%` }}
             />
           </div>

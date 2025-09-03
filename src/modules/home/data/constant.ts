@@ -43,7 +43,6 @@ export const FEEDBACKS = [
   },
 ];
 
-
 export const LOGOS = [
   {
     name: "Aramco",
@@ -81,7 +80,6 @@ export const LOGOS = [
     name: "Jumeirah Group",
     url: "/images/clients/jumeirah.png",
   },
-
 ];
 
 export const SERVICES: Service[] = [

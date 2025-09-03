@@ -75,8 +75,7 @@ export const DATA: DistributionCard[] = [
   },
   {
     category: "ICT Solutions",
-    title:
-      "Empowering Communication with Advanced Information and Communication Technology Solutions",
+    title: "Empowering Communication with Advanced Information and Communication Technology Solutions",
     description:
       "Maxline delivers cutting-edge ICT solutions with industry-leading brands like 3CX, Snom, Dinstar, Fanvil, and Yealink. From IP telephony to unified communications, our solutions enhance connectivity, efficiency, and collaboration for businesses of all sizes. Whether you need VoIP systems, SIP phones, or PBX solutions, we provide reliable and scalable ICT products tailored to your needs. Elevate your communication with Maxline today.",
     brands: [

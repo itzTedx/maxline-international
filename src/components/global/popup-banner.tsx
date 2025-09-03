@@ -30,9 +30,8 @@ export function PopupBanner({ enable }: Props) {
         <DialogHeader className="relative">
           <DialogTitle className="sr-only">Big Announcement</DialogTitle>
           <DialogDescription className="sr-only">
-            Leviton teams up with Maxline to deliver smart networking and energy
-            solutions across Saudi Arabia. Welcome aboard, Leviton - powering
-            progress together!
+            Leviton teams up with Maxline to deliver smart networking and energy solutions across Saudi Arabia. Welcome
+            aboard, Leviton - powering progress together!
           </DialogDescription>
         </DialogHeader>
         <div className="relative">
@@ -51,39 +50,30 @@ export function PopupBanner({ enable }: Props) {
               Leviton Signs with Maxline for KSA Market Expansion!
             </h2>
             <p>
-              We are excited to announce that{" "}
-              <span className="font-medium">Leviton</span>, a global leader in
-              Networking Solutions - Copper and Fiber Systems, IT/AV Systems ,
-              Data Center Solutions , has officially signed up with Maxline for
-              its entry into the Kingdom of Saudi Arabia!
+              We are excited to announce that <span className="font-medium">Leviton</span>, a global leader in
+              Networking Solutions - Copper and Fiber Systems, IT/AV Systems , Data Center Solutions , has officially
+              signed up with Maxline for its entry into the Kingdom of Saudi Arabia!
             </p>
             <p>
-              This strategic move marks a significant milestone in enhancing
-              smart infrastructure and energy efficiency across the region.{" "}
+              This strategic move marks a significant milestone in enhancing smart infrastructure and energy efficiency
+              across the region.{" "}
               <span className="font-medium">
                 {" "}
-                With Leviton’s cutting-edge innovations and Maxline’s trusted
-                local expertise,{" "}
+                With Leviton’s cutting-edge innovations and Maxline’s trusted local expertise,{" "}
               </span>{" "}
-              advanced electrical and smart home solutions will now be more
-              accessible to businesses and homeowners throughout KSA.
+              advanced electrical and smart home solutions will now be more accessible to businesses and homeowners
+              throughout KSA.
             </p>
             <p>
               This exclusive partnership was{" "}
-              <span className="font-medium">
-                officially announced by the CMD and CEO of Maxline,
-              </span>{" "}
-              highlighting the company’s commitment to bringing world-class
-              technology to the region.
+              <span className="font-medium">officially announced by the CMD and CEO of Maxline,</span> highlighting the
+              company’s commitment to bringing world-class technology to the region.
             </p>
             <p>
-              Stay tuned for updates on product availability, distribution
-              channels, and exclusive launches tailored specifically for the
-              Saudi market.
+              Stay tuned for updates on product availability, distribution channels, and exclusive launches tailored
+              specifically for the Saudi market.
             </p>
-            <p className="text-lg font-medium text-sky-600">
-              Welcome, Leviton - powering progress in KSA!
-            </p>
+            <p className="text-lg font-medium text-sky-600">Welcome, Leviton - powering progress in KSA!</p>
           </div>
         </div>
         <DialogFooter className="md:hidden">

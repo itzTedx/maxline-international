@@ -59,13 +59,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body
-        className={cn(
-          "relative antialiased",
-          generalSans.className,
-          polysans.variable
-        )}
-      >
+      <body className={cn("relative antialiased", generalSans.className, polysans.variable)}>
         <div data-vaul-drawer-wrapper className="bg-background">
           <NextTopLoader />
           <PopupBanner enable={false} />

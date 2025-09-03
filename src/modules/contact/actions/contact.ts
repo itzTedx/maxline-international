@@ -14,22 +14,11 @@ const contactSchema = z.object({
     .max(100, "Name is too long")
     .trim()
     .regex(/^[a-zA-Z\s'-]+$/, "Name contains invalid characters"),
-  email: z
-    .string()
-    .email("Invalid email")
-    .toLowerCase()
-    .trim()
-    .max(254, "Email is too long"),
-  message: z
-    .string()
-    .min(10, "Message must be at least 10 characters")
-    .max(5000, "Message is too long")
-    .trim(),
+  email: z.string().email("Invalid email").toLowerCase().trim().max(254, "Email is too long"),
+  message: z.string().min(10, "Message must be at least 10 characters").max(5000, "Message is too long").trim(),
 });
 
-export async function sendEmail(
-  formData: FormData
-): Promise<SuccessResponse | ErrorResponse> {
+export async function sendEmail(formData: FormData): Promise<SuccessResponse | ErrorResponse> {
   try {
     // Rate limiting check
     const rateLimitResult = await rateLimit();

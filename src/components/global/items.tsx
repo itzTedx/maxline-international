@@ -60,10 +60,7 @@ export const ItemCard = ({ data }: CardProps) => {
   }
 
   return (
-    <article
-      className="group grid gap-4 md:grid-cols-12 md:gap-6"
-      id={slugify(data.label)}
-    >
+    <article className="group grid gap-4 md:grid-cols-12 md:gap-6" id={slugify(data.label)}>
       <div className="order-2 md:order-1 md:col-span-7 md:p-6 md:group-even:order-2">
         <div className="flex items-center gap-4 md:gap-6">
           <div
@@ -74,13 +71,9 @@ export const ItemCard = ({ data }: CardProps) => {
           >
             <Image src={data.logo} height={86} width={86} alt="" />
           </div>
-          <h3 className="text-2xl font-medium capitalize md:text-3xl">
-            {data.label}
-          </h3>
+          <h3 className="text-2xl font-medium capitalize md:text-3xl">{data.label}</h3>
         </div>
-        <div className="prose py-4 leading-relaxed md:text-lg">
-          {data.description}
-        </div>
+        <div className="prose py-4 leading-relaxed md:text-lg">{data.description}</div>
       </div>
       <figure className="relative order-1 aspect-[4/3] overflow-hidden rounded-2xl md:order-2 md:col-span-5 md:group-even:order-1">
         <Image src={data.image} fill alt="" className="object-cover" />

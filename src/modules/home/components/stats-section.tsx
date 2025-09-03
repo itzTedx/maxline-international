@@ -21,10 +21,7 @@ export const StatsSection = () => {
         />
         <XIcon className="absolute -bottom-2 -right-2 z-50 scale-75 text-sky-400 sm:scale-100 md:bottom-2 md:right-2" />
       </div>
-      <Separator
-        orientation="vertical"
-        className="hidden h-32 bg-sky-900 md:flex"
-      />
+      <Separator orientation="vertical" className="hidden h-32 bg-sky-900 md:flex" />
       <StatCounter value={160} label="Resellers" />
       <CountryStats />
     </div>

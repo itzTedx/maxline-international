@@ -8,9 +8,9 @@ declare global {
     brands: string[];
     title: string;
     href: string;
-    image: string
+    image: string;
   }
-  interface Trading  {
+  interface Trading {
     logo: string;
     label: string;
     href: string;
@@ -77,20 +77,19 @@ declare global {
   };
 
   interface CardContent {
-    logo: string
-    label: string
-    description: string
-    image: string
+    logo: string;
+    label: string;
+    description: string;
+    image: string;
   }
 
   interface DistributionCard {
     category: string;
     title: string;
     description: string;
-    brands: CardContent[]
+    brands: CardContent[];
   }
 }
 
 // This export is needed to make the file a module
-export { };
-
+export {};

@@ -15,12 +15,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { sendEmail } from "../actions/contact";
 
 const FORM_VALIDATION_RULES = {
-  name: (value: string) =>
-    value.length >= 2 || "Name must be at least 2 characters",
-  email: (value: string) =>
-    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) || "Invalid email address",
-  message: (value: string) =>
-    value.length >= 10 || "Message must be at least 10 characters",
+  name: (value: string) => value.length >= 2 || "Name must be at least 2 characters",
+  email: (value: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) || "Invalid email address",
+  message: (value: string) => value.length >= 10 || "Message must be at least 10 characters",
 };
 
 export default function ContactForm() {
@@ -69,9 +66,7 @@ export default function ContactForm() {
         formRef.current?.reset();
         router.refresh();
       } else {
-        setErrors(
-          response.errors || { general: [response.message || "Error"] }
-        );
+        setErrors(response.errors || { general: [response.message || "Error"] });
         toast.error("Failed to send message. Please try again.");
       }
     } catch (error) {
@@ -83,10 +78,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section
-      className="max-sm:pb-24 md:py-24"
-      aria-labelledby="contact-form-title"
-    >
+    <section className="max-sm:pb-24 md:py-24" aria-labelledby="contact-form-title">
       <Card className="w-full p-6 shadow-xl shadow-sky-900/5">
         <CardHeader>
           <CardTitle id="contact-form-title" className="text-4xl font-normal">
@@ -94,33 +86,17 @@ export default function ContactForm() {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <form
-            ref={formRef}
-            onSubmit={handleSubmit}
-            className="space-y-6"
-            noValidate
-            aria-label="Contact form"
-          >
+          <form ref={formRef} onSubmit={handleSubmit} className="space-y-6" noValidate aria-label="Contact form">
             <div>
               <Label htmlFor="name">Name</Label>
               <Input id="name" name="name" placeholder="John Doe" required />
-              {errors?.name && (
-                <p className="text-sm text-red-500">{errors.name[0]}</p>
-              )}
+              {errors?.name && <p className="text-sm text-red-500">{errors.name[0]}</p>}
             </div>
 
             <div>
               <Label htmlFor="email">Email</Label>
-              <Input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="example@gmail.com"
-                required
-              />
-              {errors?.email && (
-                <p className="text-sm text-red-500">{errors.email[0]}</p>
-              )}
+              <Input id="email" name="email" type="email" placeholder="example@gmail.com" required />
+              {errors?.email && <p className="text-sm text-red-500">{errors.email[0]}</p>}
             </div>
 
             <div>
@@ -132,20 +108,14 @@ export default function ContactForm() {
                 required
                 className="field-sizing-content min-h-24"
               />
-              {errors?.message && (
-                <p className="text-sm text-red-500">{errors.message[0]}</p>
-              )}
+              {errors?.message && <p className="text-sm text-red-500">{errors.message[0]}</p>}
             </div>
 
-            {errors?.general && (
-              <p className="text-sm text-red-500">{errors.general[0]}</p>
-            )}
+            {errors?.general && <p className="text-sm text-red-500">{errors.general[0]}</p>}
             {status && <p className="text-sm text-green-500">{status}</p>}
 
             <Button type="submit" className="w-full" disabled={isLoading}>
-              <LoadingTextSwap isLoading={isLoading}>
-                Send Message
-              </LoadingTextSwap>
+              <LoadingTextSwap isLoading={isLoading}>Send Message</LoadingTextSwap>
             </Button>
           </form>
         </CardContent>

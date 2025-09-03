@@ -20,13 +20,7 @@ export const VideoBackground = () => {
   return (
     <div className="relative h-[40rem] overflow-hidden md:h-[calc(100dvh-2rem)]">
       {(isLoading || hasError) && (
-        <Image
-          src="/images/hero-banner.jpg"
-          fill
-          alt="Hero banner"
-          className="object-cover"
-          priority
-        />
+        <Image src="/images/hero-banner.jpg" fill alt="Hero banner" className="object-cover" priority />
       )}
 
       <video

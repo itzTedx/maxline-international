@@ -6,18 +6,10 @@ const generateGridTemplateAreas = (rows: number, columns: number) =>
   Array.from(
     { length: rows },
     (_, rowIndex) =>
-      `"${Array.from(
-        { length: columns },
-        (_, colIndex) => `tr-${rowIndex * columns + colIndex + 1}`
-      ).join(" ")}"`
+      `"${Array.from({ length: columns }, (_, colIndex) => `tr-${rowIndex * columns + colIndex + 1}`).join(" ")}"`
   ).join(" ");
 
-const generateStyleRules = (
-  rows: number,
-  columns: number,
-  maxX: number,
-  maxY: number
-) =>
+const generateStyleRules = (rows: number, columns: number, maxX: number, maxY: number) =>
   Array.from({ length: rows * columns }, (_, i) => {
     const row = Math.floor(i / columns);
     const col = i % columns;
@@ -65,10 +57,7 @@ const HoverCard = ({
     [rows, columns, maxXrotation, maxYrotation]
   );
 
-  const gridTemplateAreas = useMemo(
-    () => generateGridTemplateAreas(rows, columns),
-    [rows, columns]
-  );
+  const gridTemplateAreas = useMemo(() => generateGridTemplateAreas(rows, columns), [rows, columns]);
 
   return (
     <div className={cn("relative", containerClassName)}>

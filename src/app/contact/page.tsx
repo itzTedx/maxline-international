@@ -10,13 +10,11 @@ import { Faq } from "@/modules/home";
 
 export const metadata: Metadata = {
   title: "Contact Us | Maxline",
-  description:
-    "Get in touch with Maxline. Were here to help with all your questions and needs.",
+  description: "Get in touch with Maxline. Were here to help with all your questions and needs.",
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact Us | Maxline",
-    description:
-      "Get in touch with Maxline. Were here to help with all your questions and needs.",
+    description: "Get in touch with Maxline. Were here to help with all your questions and needs.",
   },
 };
 

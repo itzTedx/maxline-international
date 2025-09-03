@@ -15,10 +15,9 @@ export const Teams = () => {
             Backed by the best
           </h5>
           <p className="text-balance md:text-lg">
-            We are privileged to have an outstanding leadership team at Maxline
-            Globals. Our CMD and CFO bring visionary leadership, strategic
-            expertise, and financial acumen, driving our mission to deliver
-            excellence and innovation in IT services and technology solutions.
+            We are privileged to have an outstanding leadership team at Maxline Globals. Our CMD and CFO bring visionary
+            leadership, strategic expertise, and financial acumen, driving our mission to deliver excellence and
+            innovation in IT services and technology solutions.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-6 md:col-span-5">
@@ -32,9 +31,7 @@ export const Teams = () => {
               />
             </div>
             <h6 className="mt-3 text-lg font-medium">Ajith Kumar</h6>
-            <figcaption className="text-sm text-gray-400">
-              Chairman and Managing Director
-            </figcaption>
+            <figcaption className="text-sm text-gray-400">Chairman and Managing Director</figcaption>
           </figure>
           <figure className="group">
             <div className="relative aspect-[4/3] overflow-clip rounded-xl bg-[#DBDBDB]">
@@ -46,9 +43,7 @@ export const Teams = () => {
               />
             </div>
             <h6 className="mt-3 text-lg font-medium">Saji Thomas</h6>
-            <figcaption className="text-sm text-gray-400">
-              Chief Financial Officer
-            </figcaption>
+            <figcaption className="text-sm text-gray-400">Chief Financial Officer</figcaption>
           </figure>
         </div>
       </div>

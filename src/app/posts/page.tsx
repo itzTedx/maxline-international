@@ -31,8 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Tech Insights & Innovations | Maxline",
-    description:
-      "Explore Maxline's showcase of successful industrial projects and engineering achievements.",
+    description: "Explore Maxline's showcase of successful industrial projects and engineering achievements.",
     images: ["/images/og-gallery.jpg"],
   },
   robots: {
@@ -49,17 +48,12 @@ export default function PostsPage() {
           Smart Solutions & Industry Trends
         </h1>
         <p className="container max-w-5xl text-center text-lg text-gray-600 md:mt-4 md:text-xl">
-          Dive into the latest in IT, ICT, ELV, and AV solutions with Maxline
-          International. Our blog delivers valuable knowledge, case studies, and
-          innovations shaping the future of smart systems and digital
-          infrastructure.
+          Dive into the latest in IT, ICT, ELV, and AV solutions with Maxline International. Our blog delivers valuable
+          knowledge, case studies, and innovations shaping the future of smart systems and digital infrastructure.
         </p>
       </header>
 
-      <section
-        className="grid grid-cols-1 gap-9 pt-9 md:grid-cols-2 lg:grid-cols-3"
-        aria-label="Blog posts"
-      >
+      <section className="grid grid-cols-1 gap-9 pt-9 md:grid-cols-2 lg:grid-cols-3" aria-label="Blog posts">
         <Link
           href="/posts/leviton-maxline-ksa-partnership"
           className="group overflow-hidden rounded-xl border bg-white shadow-lg shadow-black/5"
@@ -73,10 +67,8 @@ export default function PostsPage() {
               Leviton Partners with Maxline to Expand in Saudi Arabia
             </h2>
             <p className="line-clamp-3">
-              Leviton teams up with Maxline to launch advanced networking,
-              IT/AV, and smart infrastructure solutions in Saudi Arabia.
-              Discover how this strategic partnership is set to power innovation
-              across the KSA market.
+              Leviton teams up with Maxline to launch advanced networking, IT/AV, and smart infrastructure solutions in
+              Saudi Arabia. Discover how this strategic partnership is set to power innovation across the KSA market.
             </p>
             <Button variant="link" className="w-full md:px-6">
               Read More

@@ -34,10 +34,7 @@ export const FaqItem = memo(({ index, title, content }: FaqItemProps) => {
           aria-controls={itemId}
           data-open={isOpen}
         >
-          <span
-            className="text-start text-lg font-medium tracking-tight text-gray-800"
-            itemProp="name"
-          >
+          <span className="text-start text-lg font-medium tracking-tight text-gray-800" itemProp="name">
             {index + 1}. {title}
           </span>
           <ToggleIcon isOpen={isOpen} />

@@ -45,13 +45,7 @@ const Card = memo(({ logo }: { logo: string }) => {
       )}
     >
       <div className="relative size-12">
-        <Image
-          src={logo}
-          fill
-          alt=""
-          className="object-contain"
-          loading="lazy"
-        />
+        <Image src={logo} fill alt="" className="object-contain" loading="lazy" />
       </div>
     </motion.div>
   );

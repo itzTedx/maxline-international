@@ -41,10 +41,7 @@ export interface NavLinksProps {
 }
 
 // Memoized components with proper typing
-const HoverEffect = memo<HoverEffectProps>(function HoverEffect({
-  elementFocused,
-  href,
-}) {
+const HoverEffect = memo<HoverEffectProps>(function HoverEffect({ elementFocused, href }) {
   return (
     <AnimatePresence>
       {elementFocused === href && (
@@ -96,9 +93,7 @@ const LogoCard = memo<CardProps>(function LogoCard({ data }) {
       <NavigationMenuLink asChild>
         <Link
           href={`/distributions/${data.href}`}
-          className={cn(
-            "flex w-full flex-col justify-end gap-4 rounded-xl bg-sky-50 pt-4"
-          )}
+          className={cn("flex w-full flex-col justify-end gap-4 rounded-xl bg-sky-50 pt-4")}
         >
           <div className="relative z-10 mx-auto h-40 w-[95%] overflow-hidden">
             <Image
@@ -114,9 +109,7 @@ const LogoCard = memo<CardProps>(function LogoCard({ data }) {
           <div className="space-y-1 p-4">
             <IconStar className="text-sky-500" />
             <p className="text-sm">Discover more about</p>
-            <h2 className="pb-3 font-poly-sans text-lg font-medium leading-none">
-              {data.title}
-            </h2>
+            <h2 className="pb-3 font-poly-sans text-lg font-medium leading-none">{data.title}</h2>
             <Button className="w-full">Explore more</Button>
           </div>
         </Link>
@@ -149,22 +142,15 @@ export function MegaMenu({ links, className }: NavLinksProps) {
       aria-label="Main navigation"
     >
       <Link href="/" aria-label="Maxline - Go to homepage">
-        <Logo className="h-12 w-auto text-[#231F20]" />{" "}
-        {/* Added priority for LCP */}
+        <Logo className="h-12 w-auto text-[#231F20]" /> {/* Added priority for LCP */}
       </Link>
 
       <NavigationMenuList aria-label="Main menu">
         {/* Static links */}
         {Object.entries(staticLinks).map(([, item]) => (
-          <NavigationMenuItem
-            key={item.href}
-            onMouseEnter={() => handleHoverButton(item.href)}
-          >
+          <NavigationMenuItem key={item.href} onMouseEnter={() => handleHoverButton(item.href)}>
             <NavigationMenuLink asChild>
-              <Link
-                href={item.href}
-                className={cn(navigationMenuTriggerStyle(), "relative")}
-              >
+              <Link href={item.href} className={cn(navigationMenuTriggerStyle(), "relative")}>
                 {item.title}
                 <HoverEffect elementFocused={elementFocused} href={item.href} />
               </Link>
@@ -172,10 +158,7 @@ export function MegaMenu({ links, className }: NavLinksProps) {
           </NavigationMenuItem>
         ))}
 
-        <NavigationMenuItem
-          onMouseEnter={() => handleHoverButton("company")}
-          className="relative"
-        >
+        <NavigationMenuItem onMouseEnter={() => handleHoverButton("company")} className="relative">
           <NavigationMenuTrigger>Company</NavigationMenuTrigger>
 
           <NavigationMenuContent asChild>
@@ -191,9 +174,7 @@ export function MegaMenu({ links, className }: NavLinksProps) {
                     <div className="space-y-2 p-4">
                       <IconStar className="text-sky-500" />
                       <p className="text-sm">Discover more</p>
-                      <h2 className="pb-3 font-poly-sans text-lg font-medium leading-none">
-                        About us
-                      </h2>
+                      <h2 className="pb-3 font-poly-sans text-lg font-medium leading-none">About us</h2>
                     </div>
                   </Link>
                 </NavigationMenuLink>
@@ -209,9 +190,7 @@ export function MegaMenu({ links, className }: NavLinksProps) {
                     <div className="space-y-2 p-4">
                       <IconStar className="text-sky-500" />
                       <p className="text-sm">Visual Showcase</p>
-                      <h2 className="pb-3 font-poly-sans text-lg font-medium leading-none">
-                        Gallery
-                      </h2>
+                      <h2 className="pb-3 font-poly-sans text-lg font-medium leading-none">Gallery</h2>
                     </div>
                   </Link>
                 </NavigationMenuLink>
@@ -227,9 +206,7 @@ export function MegaMenu({ links, className }: NavLinksProps) {
                     <div className="space-y-2 p-4">
                       <IconStar className="text-sky-500" />
                       <p className="text-sm">Meet Our Leaders</p>
-                      <h2 className="pb-3 font-poly-sans text-lg font-medium leading-none">
-                        Our Team
-                      </h2>
+                      <h2 className="pb-3 font-poly-sans text-lg font-medium leading-none">Our Team</h2>
                     </div>
                   </Link>
                 </NavigationMenuLink>
@@ -244,12 +221,8 @@ export function MegaMenu({ links, className }: NavLinksProps) {
                   >
                     <div className="space-y-2 p-4">
                       <IconStar className="text-sky-500" />
-                      <p className="text-sm">
-                        Smart Solutions & Industry Trends
-                      </p>
-                      <h2 className="pb-3 font-poly-sans text-lg font-medium leading-none">
-                        Blogs & News
-                      </h2>
+                      <p className="text-sm">Smart Solutions & Industry Trends</p>
+                      <h2 className="pb-3 font-poly-sans text-lg font-medium leading-none">Blogs & News</h2>
                     </div>
                   </Link>
                 </NavigationMenuLink>
@@ -261,10 +234,7 @@ export function MegaMenu({ links, className }: NavLinksProps) {
         </NavigationMenuItem>
 
         {/* Distribution section */}
-        <NavigationMenuItem
-          onMouseEnter={() => handleHoverButton(distributions.href)}
-          className="relative"
-        >
+        <NavigationMenuItem onMouseEnter={() => handleHoverButton(distributions.href)} className="relative">
           <NavigationMenuTrigger>
             <NavigationMenuLink asChild>
               <Link href={distributions.href} className="py-3">
@@ -281,17 +251,11 @@ export function MegaMenu({ links, className }: NavLinksProps) {
             </ul>
           </NavigationMenuContent>
 
-          <HoverEffect
-            elementFocused={elementFocused}
-            href={distributions.href}
-          />
+          <HoverEffect elementFocused={elementFocused} href={distributions.href} />
         </NavigationMenuItem>
 
         {/* Trading section - optimized rendering */}
-        <NavigationMenuItem
-          onMouseEnter={() => handleHoverButton(tradings.href)}
-          className="relative"
-        >
+        <NavigationMenuItem onMouseEnter={() => handleHoverButton(tradings.href)} className="relative">
           <NavigationMenuTrigger>
             <NavigationMenuLink asChild className="py-3">
               <Link href={`${tradings.href}`}>{tradings.title}</Link>
@@ -314,9 +278,7 @@ export function MegaMenu({ links, className }: NavLinksProps) {
                         Show More
                         <IconArrowNarrowRight className="size-4 scale-90 text-gray-400 transition group-hover/link:scale-110" />
                       </div>
-                      <div className="">
-                        {roundToNearest(tradings.brands.length, 10)} +
-                      </div>
+                      <div className="">{roundToNearest(tradings.brands.length, 10)} +</div>
                     </Link>
                   </NavigationMenuLink>
                 </li>
@@ -325,9 +287,7 @@ export function MegaMenu({ links, className }: NavLinksProps) {
                 <div className="flex w-full flex-col justify-end rounded-xl bg-sky-100 p-4">
                   <IconStar className="text-sky-500" />
                   <p className="pt-4 text-sm">Discover more about</p>
-                  <h2 className="pb-4 font-poly-sans text-lg font-medium leading-none">
-                    {tradings.title}
-                  </h2>
+                  <h2 className="pb-4 font-poly-sans text-lg font-medium leading-none">{tradings.title}</h2>
                   <Button className="w-full" asChild>
                     <Link href="/tradings">Explore more</Link>
                   </Button>
@@ -340,10 +300,7 @@ export function MegaMenu({ links, className }: NavLinksProps) {
         </NavigationMenuItem>
 
         {/* Services section */}
-        <NavigationMenuItem
-          onMouseEnter={() => handleHoverButton(services.href)}
-          className="relative"
-        >
+        <NavigationMenuItem onMouseEnter={() => handleHoverButton(services.href)} className="relative">
           <NavigationMenuTrigger>
             <NavigationMenuLink asChild className="py-3">
               <Link href={`${services.href}`}>{services.title}</Link>
@@ -363,9 +320,7 @@ export function MegaMenu({ links, className }: NavLinksProps) {
                     >
                       <div className="">
                         <p className="font-medium">{service.title}</p>
-                        <p className="text-sm text-muted-foreground">
-                          Service Description
-                        </p>
+                        <p className="text-sm text-muted-foreground">Service Description</p>
                       </div>
                       <IconArrowNarrowRight className="size-4 -rotate-45 scale-90 text-gray-400 transition group-hover/link:rotate-0 group-hover/link:scale-110" />
                     </Link>

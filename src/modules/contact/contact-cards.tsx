@@ -9,10 +9,7 @@ export const ContactCard = () => {
   return (
     <section className="container -mt-40 grid max-w-7xl gap-3 pb-12 md:grid-cols-3 md:gap-4">
       {CONTACTS.map((contact) => (
-        <AnimatedCard
-          key={contact.subtext}
-          contentClassName="bg-white/80 border-sky-400 p-9"
-        >
+        <AnimatedCard key={contact.subtext} contentClassName="bg-white/80 border-sky-400 p-9">
           <contact.icon className="size-9 stroke-1" />
 
           <h2 className="pt-6 text-lg font-medium md:pt-16">{contact.title}</h2>

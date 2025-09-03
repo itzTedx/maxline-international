@@ -12,12 +12,7 @@ export const Faq = memo(() => {
       </h3>
       <div className="space-y-2">
         {FAQS.map((faq, i) => (
-          <FaqItem
-            key={`item-${i + 1}`}
-            index={i}
-            title={faq.question}
-            content={faq.answer}
-          />
+          <FaqItem key={`item-${i + 1}`} index={i} title={faq.question} content={faq.answer} />
         ))}
       </div>
     </section>

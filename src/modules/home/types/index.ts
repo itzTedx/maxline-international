@@ -1,6 +1,6 @@
 export type Service = {
-    title: string;
-    href: string;
-    image: string;
-    imageAlt: string;
-  };
+  title: string;
+  href: string;
+  image: string;
+  imageAlt: string;
+};

@@ -11,8 +11,7 @@ export const MissionVision = () => {
           <AuroraText>Mission</AuroraText>
         </h3>
         <p className="col-span-2 font-light leading-relaxed">
-          Lead globally in ICT, ELV, and AV distribution with innovative,
-          reliable, and scalable tech solutions.
+          Lead globally in ICT, ELV, and AV distribution with innovative, reliable, and scalable tech solutions.
         </p>
       </div>
       <div className="grid grid-cols-3 gap-4 md:gap-9">
@@ -20,8 +19,7 @@ export const MissionVision = () => {
           <AuroraText>Vision</AuroraText>
         </h3>
         <p className="col-span-2 font-light leading-relaxed">
-          Provide top-quality products and services to keep customers ahead in
-          evolving technology.
+          Provide top-quality products and services to keep customers ahead in evolving technology.
         </p>
       </div>
     </section>
