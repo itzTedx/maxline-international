@@ -44,37 +44,34 @@ export default function GalleryPage() {
     <main className="container py-4 md:py-28">
       <header className="md:py-9">
         <h1 className="text-center text-4xl md:text-6xl">Our Gallery</h1>
-        <p className="text-center text-lg text-gray-600 md:mt-4 md:text-xl">
+        <p className="text-center text-gray-600 text-lg md:mt-4 md:text-xl">
           Discover our portfolio of successful team
         </p>
       </header>
 
-      <section className="columns-2 gap-3 md:columns-4 md:gap-6" aria-label="Achievement gallery">
+      <section aria-label="Achievement gallery" className="columns-2 gap-3 md:columns-4 md:gap-6">
         <video
-          muted
-          slot="media"
-          src="/videos/riyadh-municipality-project.webm"
-          playsInline
-          loop
           autoPlay
           className="relative mt-3 inline-block w-full rounded-xl md:mt-6"
           crossOrigin="anonymous"
+          loop
+          muted
+          playsInline
+          slot="media"
+          src="/videos/riyadh-municipality-project.webm"
         />
 
         {GALLERY.map((image, i) => (
           <div
-            className={cn(
-              "relative mt-3 inline-block w-full md:mt-6",
-              image.isVertical ? "aspect-3/4" : "aspect-4/3"
-            )}
+            className={cn("relative mt-3 inline-block w-full md:mt-6", image.isVertical ? "aspect-3/4" : "aspect-4/3")}
             key={i}
           >
             <Image
-              src={image.src}
-              fill
               alt={image.alt}
               className="rounded-xl object-cover"
+              fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              src={image.src}
             />
           </div>
         ))}
