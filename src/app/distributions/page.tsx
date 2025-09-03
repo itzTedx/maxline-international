@@ -49,7 +49,7 @@ export default function Distributions() {
                 <h3 className="font-poly-sans text-3xl group-hover:text-sky-600">{title}</h3>
                 <p className="text-balance text-lg">{description}</p>
               </div>
-              <div className="relative order-1 aspect-[4/3] overflow-hidden rounded-2xl border bg-background md:order-2 md:col-span-5 md:group-even:order-1">
+              <div className="relative order-1 aspect-4/3 overflow-hidden rounded-2xl border bg-background md:order-2 md:col-span-5 md:group-even:order-1">
                 <Suspense fallback={<LoadingSpinner />}>
                   <Integrations data={brands.flatMap((b) => b.logo)} />
                 </Suspense>

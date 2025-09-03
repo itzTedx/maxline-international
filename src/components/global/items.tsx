@@ -75,7 +75,7 @@ export const ItemCard = ({ data }: CardProps) => {
         </div>
         <div className="prose py-4 leading-relaxed md:text-lg">{data.description}</div>
       </div>
-      <figure className="relative order-1 aspect-[4/3] overflow-hidden rounded-2xl md:order-2 md:col-span-5 md:group-even:order-1">
+      <figure className="relative order-1 aspect-4/3 overflow-hidden rounded-2xl md:order-2 md:col-span-5 md:group-even:order-1">
         <Image src={data.image} fill alt="" className="object-cover" />
       </figure>
     </article>

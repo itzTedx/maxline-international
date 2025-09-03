@@ -86,14 +86,14 @@ export default function WorldMap({ dots = [], lineColor = "#0ea5e9" }: MapProps)
   const paths = useMemo(() => projectedDots.map((dot) => createCurvedPath(dot.start, dot.end)), [projectedDots]);
 
   if (!mapSvg) {
-    return <div className="relative aspect-[2/1] w-full animate-pulse rounded-lg bg-gray-100" />;
+    return <div className="relative aspect-2/1 w-full animate-pulse rounded-lg bg-gray-100" />;
   }
 
   return (
-    <div className="relative aspect-[2/1] w-full rounded-lg">
+    <div className="relative aspect-2/1 w-full rounded-lg">
       <Image
         src={`data:image/svg+xml;utf8,${encodeURIComponent(mapSvg)}`}
-        className="pointer-events-none h-full w-full select-none mix-blend-multiply [mask-image:linear-gradient(to_bottom,transparent,white_10%,transparent_90%)]"
+        className="pointer-events-none h-full w-full select-none mix-blend-multiply mask-[linear-gradient(to_bottom,transparent,white_10%,transparent_90%)]"
         alt="world map"
         height="495"
         width="1056"

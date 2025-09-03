@@ -31,7 +31,7 @@ const FeatureCard = memo(
       aria-label={ariaLabel}
       role="listitem"
     >
-      <div className="inset-shadow-[4px_4px_0_0] inset-shadow-white flex size-20 items-center justify-center rounded-full bg-gradient-to-b from-[#F2F2F2] to-white px-0 py-0 text-black shadow-lg shadow-sky-800/10 md:size-24">
+      <div className="inset-shadow-[4px_4px_0_0] inset-shadow-white flex size-20 items-center justify-center rounded-full bg-linear-to-b from-[#F2F2F2] to-white px-0 py-0 text-black shadow-lg shadow-sky-800/10 md:size-24">
         <Icon className="size-12 text-slate-800 md:size-14" />
       </div>
       <div className="mt-4 space-y-3">

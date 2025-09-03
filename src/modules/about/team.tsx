@@ -22,7 +22,7 @@ export const Teams = () => {
         </div>
         <div className="grid grid-cols-2 gap-6 md:col-span-5">
           <figure className="group">
-            <div className="relative aspect-[4/3] overflow-clip rounded-xl bg-[#DBDBDB] saturate-0 transition duration-500 ease-out group-hover:saturate-100">
+            <div className="relative aspect-4/3 overflow-clip rounded-xl bg-[#DBDBDB] saturate-0 transition duration-500 ease-out group-hover:saturate-100">
               <Image
                 src="/images/avatar/ajith-kumar.webp"
                 fill
@@ -34,7 +34,7 @@ export const Teams = () => {
             <figcaption className="text-sm text-gray-400">Chairman and Managing Director</figcaption>
           </figure>
           <figure className="group">
-            <div className="relative aspect-[4/3] overflow-clip rounded-xl bg-[#DBDBDB]">
+            <div className="relative aspect-4/3 overflow-clip rounded-xl bg-[#DBDBDB]">
               <Image
                 src="/images/avatar/saji-thomas.webp"
                 fill

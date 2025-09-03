@@ -36,7 +36,7 @@ export const GalleryImages = memo(() => {
   return (
     <div className="relative flex w-full -translate-x-1/2 scale-[.35] gap-6 max-sm:-mt-28 md:-translate-x-16 md:scale-100 md:pb-40 md:pt-20">
       {images.map((img) => (
-        <div className="relative aspect-[3/4] h-[33rem]" key={img.src}>
+        <div className="relative aspect-3/4 h-132" key={img.src}>
           <Image
             {...img}
             fill
@@ -49,7 +49,7 @@ export const GalleryImages = memo(() => {
           />
         </div>
       ))}
-      <MemoizedXIcon className="absolute -left-[12%] top-1/2 -z-20 h-[50rem] w-[74rem] -translate-y-[50%] text-sky-200/50" />
+      <MemoizedXIcon className="absolute -left-[12%] top-1/2 -z-20 h-200 w-296 -translate-y-[50%] text-sky-200/50" />
     </div>
   );
 });

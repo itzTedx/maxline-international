@@ -42,7 +42,7 @@ export function PopupBanner({ enable }: Props) {
             height={80}
             alt=""
           />
-          <div className="relative aspect-[16/6] overflow-hidden rounded-md">
+          <div className="relative aspect-16/6 overflow-hidden rounded-md">
             <Image src="/banner.webp" fill className="object-cover" alt="" />
           </div>
           <div className="space-y-2 p-6 text-sm">

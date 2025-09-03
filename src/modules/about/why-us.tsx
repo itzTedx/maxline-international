@@ -97,7 +97,7 @@ export function WhyChooseUs() {
                     )}
                     style={{ zIndex: data.length - index }}
                   >
-                    <div className="absolute bottom-0 w-full bg-gradient-to-b from-[#1B1B1B]/80 to-[#3B3B3B]/80 px-6 py-4 text-white backdrop-blur-lg">
+                    <div className="absolute bottom-0 w-full bg-linear-to-b from-[#1B1B1B]/80 to-[#3B3B3B]/80 px-6 py-4 text-white backdrop-blur-lg">
                       <h3 className="pb-2 text-2xl font-medium">{item.title}</h3>
                       <p className="font-light max-md:pb-3 md:text-lg">{item.content}</p>
                     </div>

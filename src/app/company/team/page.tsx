@@ -55,7 +55,7 @@ export default function TeamPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <main>
-        <header className="relative m-3 flex items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-b from-sky-950 to-[#062438] pb-20 pt-40">
+        <header className="relative m-3 flex items-center justify-center overflow-hidden rounded-3xl bg-linear-to-b from-sky-950 to-[#062438] pb-20 pt-40">
           <div className="z-10 space-y-6 text-center">
             <h1 className="text-5xl text-white">
               Meet Our Leadership Team
@@ -81,7 +81,7 @@ export default function TeamPage() {
           aria-label="Executive Leadership Team"
         >
           <article className="space-y-4">
-            <div className="relative aspect-[4/3]">
+            <div className="relative aspect-4/3">
               <Image
                 src="/images/avatar/ajith-kumar.webp"
                 className="rounded-2xl object-cover"
@@ -103,7 +103,7 @@ export default function TeamPage() {
             </p>
           </article>
           <article className="space-y-4">
-            <div className="relative aspect-[4/3]">
+            <div className="relative aspect-4/3">
               <Image
                 src="/images/avatar/saji-thomas.webp"
                 className="rounded-2xl object-cover"
@@ -127,7 +127,7 @@ export default function TeamPage() {
         </section>
         <section className="container grid max-w-5xl grid-cols-1 gap-12 pb-24 pt-12 md:grid-cols-3">
           <article className="space-y-4">
-            <div className="relative aspect-[4/3]">
+            <div className="relative aspect-4/3">
               <Image
                 src="/images/avatar/liju.webp"
                 className="rounded-2xl object-cover"
@@ -142,7 +142,7 @@ export default function TeamPage() {
             </div>
           </article>
           <article className="space-y-4">
-            <div className="relative aspect-[4/3]">
+            <div className="relative aspect-4/3">
               <Image
                 src="/images/avatar/george.webp"
                 className="rounded-2xl object-cover"
@@ -157,7 +157,7 @@ export default function TeamPage() {
             </div>
           </article>
           <article className="space-y-4">
-            <div className="relative aspect-[4/3]">
+            <div className="relative aspect-4/3">
               <Image
                 src="/images/avatar/sanjai.webp"
                 className="rounded-2xl object-cover"

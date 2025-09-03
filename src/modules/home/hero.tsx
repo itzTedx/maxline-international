@@ -19,7 +19,7 @@ export const Hero = () => {
         <div className="w-full pb-9 md:-mt-60">
           <div className="container relative z-10 grid items-center gap-3 rounded-2xl bg-white px-9 py-6 lg:grid-cols-4 lg:gap-6">
             <h1
-              className="bg-clip-text align-middle font-poly-sans text-3xl !leading-tight tracking-tight text-gray-900 md:text-5xl lg:col-span-3 lg:text-[3.7rem]"
+              className="bg-clip-text align-middle font-poly-sans text-3xl leading-tight! tracking-tight text-gray-900 md:text-5xl lg:col-span-3 lg:text-[3.7rem]"
               itemProp="name"
             >
               Empowering Global Businesses with Cutting-Edge <AuroraText>ICT, ELV & AV </AuroraText> Solutions
@@ -30,7 +30,7 @@ export const Hero = () => {
                 Seamless solutions from sourcing to delivery. Trust us to power your <br className="hidden md:block" />
                 business with innovation and reliability.
               </p>
-              <Button variant="primary" className="w-full bg-gradient-to-b" asChild>
+              <Button variant="primary" className="w-full bg-linear-to-b" asChild>
                 <Link href="/contact">Get Started Today</Link>
               </Button>
             </div>

@@ -74,7 +74,7 @@ export default function FloatingWhatsapp({ className }: { className?: string }) 
 
   return (
     <div
-      className={cn("fixed right-3 z-[99999999] transition-all", className)}
+      className={cn("fixed right-3 z-99999999 transition-all", className)}
       style={{
         bottom: typeof window !== "undefined" && viewportHeight < window.innerHeight ? "30vh" : "3vh",
       }}
@@ -107,11 +107,11 @@ export default function FloatingWhatsapp({ className }: { className?: string }) 
             </CardHeader>
 
             <CardContent className="bg-[url('/whatsapp-bg.jpg')] bg-cover py-0 pb-1.5">
-              <div className="relative h-[12rem] border-0 pt-4">
-                <div className="whatsapp-clip absolute -left-3 top-4 z-[999] inline-block h-0 w-0" />
+              <div className="relative h-48 border-0 pt-4">
+                <div className="whatsapp-clip absolute -left-3 top-4 z-999 inline-block h-0 w-0" />
                 <motion.div className="w-fit rounded-lg bg-sky-500 p-3 px-4 text-background shadow-md" layout>
                   {showMessage ? (
-                    <div className="min-w-[13rem]">
+                    <div className="min-w-52">
                       <h6 className="pb-1.5 pr-12 font-bold">Maxline</h6>
                       <p className="text-sm">
                         Hello there! 🤝

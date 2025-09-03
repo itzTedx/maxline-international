@@ -54,7 +54,7 @@ export default function ServicesPage() {
               </div>
               <div className="prose py-4 leading-relaxed md:py-9 md:text-xl">{service.description}</div>
             </div>
-            <figure className="relative order-1 aspect-[4/3] overflow-hidden rounded-2xl md:order-2 md:col-span-5 md:group-even:order-1">
+            <figure className="relative order-1 aspect-4/3 overflow-hidden rounded-2xl md:order-2 md:col-span-5 md:group-even:order-1">
               <Image
                 src={service.image}
                 fill

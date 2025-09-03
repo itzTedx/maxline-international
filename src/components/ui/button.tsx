@@ -15,9 +15,9 @@ const buttonVariants = cva(
         outline:
           "border border-sky-800 bg-background shadow-sm hover:bg-accent hover:text-accent-foreground rounded-full",
         primary:
-          "border-background/40 !rounded-full border bg-gradient-to-b from-sky-600 to-sky-400 shadow-md shadow-sky-600/20 hover:from-sky-400 hover:to-sky-500 text-background hover:shadow-lg transition-[background-image]",
+          "border-background/40 rounded-full! border bg-linear-to-b from-sky-600 to-sky-400 shadow-md shadow-sky-600/20 hover:from-sky-400 hover:to-sky-500 text-background hover:shadow-lg transition-[background-image]",
         secondary:
-          "rounded-full bg-gradient-to-b from-[#F2F2F2] to-white text-black inset-shadow-[4px_4px_0_0] inset-shadow-white",
+          "rounded-full bg-linear-to-b from-[#F2F2F2] to-white text-black inset-shadow-[4px_4px_0_0] inset-shadow-white",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
       },

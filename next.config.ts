@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
       fullUrl: true,
     },
   },
-  i18n: { locales: ["en", "ar"], defaultLocale: "en" },
+
   async headers() {
     return [
       {

@@ -58,7 +58,7 @@ export default function PostsPage() {
           href="/posts/leviton-maxline-ksa-partnership"
           className="group overflow-hidden rounded-xl border bg-white shadow-lg shadow-black/5"
         >
-          <div className="relative aspect-[16/9]">
+          <div className="relative aspect-video">
             <Image src="/banner.webp" fill alt="" className="object-cover" />
           </div>
           <div className="space-y-3 p-4">

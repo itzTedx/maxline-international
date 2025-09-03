@@ -21,12 +21,12 @@ const ServiceCard = memo(({ service }: { service: Service }) => (
     <HoverCard
       className="rounded-xl border border-sky-500/10 bg-sky-400/10 group-hover:border-sky-500/50 group-hover:bg-sky-400/25"
       columns={10}
-      containerClassName="md:aspect-[7/8] aspect-[4/3]"
+      containerClassName="md:aspect-7/8 aspect-4/3"
       maxXrotation={5}
       maxYrotation={5}
       rows={12}
     >
-      <div className="group relative z-10 flex aspect-[4/3] items-end justify-between overflow-clip rounded-xl p-8 shadow-xl transition-all ease-out hover:scale-105 md:aspect-[7/8] md:p-10">
+      <div className="group relative z-10 flex aspect-4/3 items-end justify-between overflow-clip rounded-xl p-8 shadow-xl transition-all ease-out hover:scale-105 md:aspect-7/8 md:p-10">
         <h3 className="font-poly-sans text-2xl font-light">{service.title}</h3>
         <div className={cn(buttonVariants({ size: "icon", variant: "secondary" }))} aria-hidden="true">
           <IconArrowUpRight className="shrink-0 transition-transform group-hover:rotate-45" />
@@ -75,7 +75,7 @@ export const Services = memo(() => (
         <ServiceCard key={service.title} service={service} />
       ))}
     </div>
-    <div className="absolute left-1/2 top-0 size-[calc(100svw-2rem)] -translate-x-1/2 -translate-y-1/2 scale-y-75 rounded-full bg-sky-100/60 blur-[500px] md:size-[48rem]" />
+    <div className="absolute left-1/2 top-0 size-[calc(100svw-2rem)] -translate-x-1/2 -translate-y-1/2 scale-y-75 rounded-full bg-sky-100/60 blur-[500px] md:size-192" />
     <Grid className="absolute bottom-0 h-auto w-full" />
   </section>
 ));

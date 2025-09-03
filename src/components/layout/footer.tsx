@@ -99,9 +99,9 @@ export const Footer = memo(() => {
           </ul>
         </address>
       </div>
-      <div className="container relative h-20 overflow-y-clip md:h-[16rem]">
+      <div className="container relative h-20 overflow-y-clip md:h-64">
         <div
-          className="absolute left-0 z-10 size-full bg-gradient-to-t from-[#032033] to-transparent"
+          className="absolute left-0 z-10 size-full bg-linear-to-t from-[#032033] to-transparent"
           aria-hidden="true"
         />
         <Logo

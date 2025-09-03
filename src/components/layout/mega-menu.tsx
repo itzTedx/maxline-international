@@ -104,7 +104,7 @@ const LogoCard = memo<CardProps>(function LogoCard({ data }) {
               loading="lazy"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
-            <div className="absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-sky-50 to-transparent to-40%" />
+            <div className="absolute inset-x-0 bottom-0 h-full bg-linear-to-t from-sky-50 to-transparent to-40%" />
           </div>
           <div className="space-y-1 p-4">
             <IconStar className="text-sky-500" />
@@ -162,7 +162,7 @@ export function MegaMenu({ links, className }: NavLinksProps) {
           <NavigationMenuTrigger>Company</NavigationMenuTrigger>
 
           <NavigationMenuContent asChild>
-            <ul className="mx-auto grid grid-cols-4 gap-3 p-6 md:w-[100dvw] lg:w-[72rem]">
+            <ul className="mx-auto grid grid-cols-4 gap-3 p-6 md:w-dvw lg:w-6xl">
               <li>
                 <NavigationMenuLink asChild>
                   <Link
@@ -244,7 +244,7 @@ export function MegaMenu({ links, className }: NavLinksProps) {
           </NavigationMenuTrigger>
 
           <NavigationMenuContent asChild>
-            <ul className="mx-auto grid grid-cols-4 gap-3 p-6 md:w-[100dvw] lg:w-[72rem]">
+            <ul className="mx-auto grid grid-cols-4 gap-3 p-6 md:w-dvw lg:w-6xl">
               {distributions.categories.map((dist) => (
                 <LogoCard key={dist.href} data={dist} />
               ))}
@@ -263,7 +263,7 @@ export function MegaMenu({ links, className }: NavLinksProps) {
           </NavigationMenuTrigger>
 
           <NavigationMenuContent asChild>
-            <div className="mx-auto grid grid-cols-8 md:w-[100dvw] lg:w-[72rem]">
+            <div className="mx-auto grid grid-cols-8 md:w-dvw lg:w-6xl">
               <ul className="col-span-6 grid grid-cols-4 items-start gap-3 p-6">
                 {tradings.brands.slice(0, 19).map((brand, i) => (
                   <ListItem item={brand} key={`${brand.logo}-${i}`} />
@@ -308,7 +308,7 @@ export function MegaMenu({ links, className }: NavLinksProps) {
           </NavigationMenuTrigger>
 
           <NavigationMenuContent asChild>
-            <ul className="grid grid-cols-2 gap-3 p-6 md:w-dvw lg:w-[72rem]">
+            <ul className="grid grid-cols-2 gap-3 p-6 md:w-dvw lg:w-6xl">
               {services.services.map((service) => (
                 <li key={service.href} className="rounded-lg border">
                   <NavigationMenuLink asChild>

@@ -26,7 +26,7 @@ export const AboutUs = () => {
           </p>
         </div>
       </div>
-      <XIcon className="absolute right-0 top-1/2 -z-10 size-[38rem] -translate-y-1/2 translate-x-[10%] -scale-x-100 text-sky-100" />
+      <XIcon className="absolute right-0 top-1/2 -z-10 size-152 -translate-y-1/2 translate-x-[10%] -scale-x-100 text-sky-100" />
     </section>
   );
 };

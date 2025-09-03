@@ -55,7 +55,7 @@ const CountryStats = () => (
       <FlagIndia className="rounded-full" />
       <FlagUae className="rounded-full" />
       <FlagUsa className="rounded-full" />
-      <div className="grid place-content-center rounded-full bg-yellow-500 text-black lg:!size-11">
+      <div className="grid place-content-center rounded-full bg-yellow-500 text-black lg:size-11!">
         <IconPlus size={16} stroke={3} />
       </div>
     </div>

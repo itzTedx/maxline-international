@@ -12,7 +12,7 @@ import { FEEDBACKS } from "./data/constant";
 const ReviewCard = memo(({ feed }: { feed: (typeof FEEDBACKS)[0] }) => (
   <article itemScope itemType="https://schema.org/Review">
     <Card>
-      <CardContent className="pointer-events-none flex aspect-[5/4] select-none flex-col justify-between p-6">
+      <CardContent className="pointer-events-none flex aspect-5/4 select-none flex-col justify-between p-6">
         <div className="space-y-3 md:space-y-4">
           <header className="flex items-center gap-3">
             <div className="relative size-12 rounded-full">
@@ -75,12 +75,12 @@ export const CustomerReviews = () => {
             <h2 className="font-poly-sans text-2xl font-medium md:text-3xl">Our Client Says</h2>
             <div className="flex gap-x-3">
               <CarouselPrevious
-                className="!inset-shadow-[2px_2px_0_0] static translate-y-0"
+                className="inset-shadow-[2px_2px_0_0]! static translate-y-0"
                 variant="secondary"
                 aria-label="View previous reviews"
               />
               <CarouselNext
-                className="!inset-shadow-[2px_2px_0_0] static translate-y-0"
+                className="inset-shadow-[2px_2px_0_0]! static translate-y-0"
                 variant="secondary"
                 aria-label="View next reviews"
               />

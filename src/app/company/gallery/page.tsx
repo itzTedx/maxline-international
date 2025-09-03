@@ -65,7 +65,7 @@ export default function GalleryPage() {
           <div
             className={cn(
               "relative mt-3 inline-block w-full md:mt-6",
-              image.isVertical ? "aspect-[3/4]" : "aspect-[4/3]"
+              image.isVertical ? "aspect-3/4" : "aspect-4/3"
             )}
             key={i}
           >

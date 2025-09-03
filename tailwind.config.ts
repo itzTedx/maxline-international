@@ -2,13 +2,7 @@ import typography from "@tailwindcss/typography";
 import type { Config } from "tailwindcss";
 import animate from "tailwindcss-animate";
 
-const {
-  default: flattenColorPalette,
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-} = require("tailwindcss/lib/util/flattenColorPalette");
-
 export default {
-  darkMode: ["class"],
   content: [
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/modules/**/*.{js,ts,jsx,tsx,mdx}",
@@ -126,16 +120,5 @@ export default {
       },
     },
   },
-  plugins: [animate, addVariablesForColors, typography],
+  plugins: [animate, typography],
 } satisfies Config;
-
-// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function addVariablesForColors({ addBase, theme }: any) {
-  const allColors = flattenColorPalette(theme("colors"));
-  const newVars = Object.fromEntries(Object.entries(allColors).map(([key, val]) => [`--${key}`, val]));
-
-  addBase({
-    ":root": newVars,
-  });
-}

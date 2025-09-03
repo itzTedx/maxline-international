@@ -63,7 +63,7 @@ export default function BlogPage() {
           Leviton teams up with Maxline to launch advanced networking, IT/AV, and smart infrastructure solutions in
           Saudi Arabia. Discover how this strategic partnership is set to power innovation across the KSA market.
         </p>
-        <div className="relative aspect-[16/7]">
+        <div className="relative aspect-16/7">
           <Image src="/banner.webp" fill className="rounded-xl object-cover" alt="" />
         </div>
       </header>
