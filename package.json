@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "private": true,
   "scripts": {
-    "dev": "next dev --webpack",
+    "dev": "next dev",
     "build": "next build --webpack",
     "start": "next start --webpack",
     "lint": "biome check",
@@ -13,7 +13,7 @@
   "dependencies": {
     "@number-flow/react": "^0.5.5",
     "@tabler/icons-react": "^3.29.0",
-    "@tailwindcss/postcss": "^4.1.12",
+    "@tailwindcss/postcss": "^4.1.18",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.8.1",
     "class-variance-authority": "^0.7.1",
@@ -43,7 +43,7 @@
     "@types/nodemailer": "^6.4.17",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
-    "tailwindcss": "^4.1.12",
+    "tailwindcss": "^4.1.18",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5"
   },

@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
 
+  images: {
+    qualities: [75, 90],
+  },
+
   logging: {
     fetches: {
       fullUrl: true,
