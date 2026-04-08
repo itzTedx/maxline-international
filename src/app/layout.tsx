@@ -15,6 +15,8 @@ import { cn } from "@/lib/utils";
 
 import "./globals.css";
 
+import OpenPanelProvider from "@/components/open-panel";
+
 const LiveChat = dynamic(() => import("@/lib/3cx"));
 
 export const metadata: Metadata = {
@@ -61,17 +63,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn("relative antialiased", generalSans.className, polysans.variable)}>
-        <div className="bg-background" data-vaul-drawer-wrapper>
-          <NextTopLoader />
-          <PopupBanner enable={false} />
-          <Navbar />
-          {children}
-          {/* <FloatingWhatsapp /> */}
-          <BreakpointIndicator />
-          <Footer />
-          <Toaster />
-        </div>
-        <LiveChat />
+        <OpenPanelProvider>
+          <div className="bg-background" data-vaul-drawer-wrapper>
+            <NextTopLoader />
+            <PopupBanner enable={false} />
+            <Navbar />
+            {children}
+            {/* <FloatingWhatsapp /> */}
+            <BreakpointIndicator />
+            <Footer />
+            <Toaster />
+          </div>
+          <LiveChat />
+        </OpenPanelProvider>
       </body>
     </html>
   );

@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@number-flow/react": "^0.6.0",
+    "@openpanel/nextjs": "^1.4.0",
     "@tabler/icons-react": "^3.41.1",
     "@tailwindcss/postcss": "^4.2.2",
     "@tsparticles/react": "^3.0.0",

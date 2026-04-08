@@ -11,6 +11,9 @@ importers:
       '@number-flow/react':
         specifier: ^0.6.0
         version: 0.6.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@openpanel/nextjs':
+        specifier: ^1.4.0
+        version: 1.4.0(next@16.2.2(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@tabler/icons-react':
         specifier: ^3.41.1
         version: 3.41.1(react@19.2.4)
@@ -455,6 +458,19 @@ packages:
     peerDependencies:
       react: ^18 || ^19
       react-dom: ^18 || ^19
+
+  '@openpanel/nextjs@1.4.0':
+    resolution: {integrity: sha512-usMxqdrgAEmBHMZBkJJDX4NeqNOhcP3s0iSuB+TflsUem8R8rsso97jiysoTjae9ZJA4gUe1YDIbh7DyARJhzg==}
+    peerDependencies:
+      next: ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
+  '@openpanel/sdk@1.3.0':
+    resolution: {integrity: sha512-VK/1oawBjGdxA+oYtqcWlNXlLT1zRJ9tslHoMvqqsqlcLNOhH26ltcHpyGp5RhtIF7uIkCltiicALfFN7fyldw==}
+
+  '@openpanel/web@1.3.0':
+    resolution: {integrity: sha512-geUPcn35oMqWlBS7rB4ejP6qzKGs4VDAZhoSw9MD3q/UYkD/pfTEx70z1ydGVJMjHREdXoAL1XVhBLdZmu1gsw==}
 
   '@radix-ui/number@1.1.1':
     resolution: {integrity: sha512-MkKCwxlXTgz6CFoJx3pCwn07GKp36+aZyu/u2Ln2VrA5DcdyCZkASEDBTd8x5whTQQL5CiYf4prXKLcgQdv29g==}
@@ -1146,6 +1162,12 @@ packages:
   '@radix-ui/rect@1.1.1':
     resolution: {integrity: sha512-HPwpGIzkl28mWyZqG52jiqDJ12waP11Pa1lGoiyUkIEuMLBP0oeK/C89esbXrxsky5we7dfd8U58nm0SgAWpVw==}
 
+  '@rrweb/types@2.0.0-alpha.20':
+    resolution: {integrity: sha512-RbnDgKxA/odwB1R4gF7eUUj+rdSrq6ROQJsnMw7MIsGzlbSYvJeZN8YY4XqU0G6sKJvXI6bSzk7w/G94jNwzhw==}
+
+  '@rrweb/utils@2.0.0-alpha.20':
+    resolution: {integrity: sha512-MTQOmhPRe39C0fYaCnnVYOufQsyGzwNXpUStKiyFSfGLUJrzuwhbRoUAKR5w6W2j5XuA0bIz3ZDIBztkquOhLw==}
+
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
 
@@ -1374,6 +1396,9 @@ packages:
   '@turf/invariant@7.3.4':
     resolution: {integrity: sha512-88Eo4va4rce9sNZs6XiMJowWkikM3cS2TBhaCKlU+GFHdNf8PFEpiU42VDU8q5tOF6/fu21Rvlke5odgOGW4AQ==}
 
+  '@types/css-font-loading-module@0.0.7':
+    resolution: {integrity: sha512-nl09VhutdjINdWyXxHWN/w9zlNCfr60JUqJbd24YXUuCwgeL0TpFSdElCwb6cxfB6ybE19Gjj4g0jsgkXxKv1Q==}
+
   '@types/geojson@7946.0.16':
     resolution: {integrity: sha512-6C8nqWur3j98U6+lXDfTUWIfgvZU+EumvpHKcYjujKH7woYyLj2sUmff0tRhrqM7BohUw7Pz3ZB1jj2gW9Fvmg==}
 
@@ -1394,9 +1419,16 @@ packages:
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
 
+  '@xstate/fsm@1.6.5':
+    resolution: {integrity: sha512-b5o1I6aLNeYlU/3CPlj/Z91ybk1gUsKT+5NAJI+2W4UjvS5KLG28K9v5UvNoFVjHV8PajVZ00RH3vnjyQO7ZAw==}
+
   aria-hidden@1.2.6:
     resolution: {integrity: sha512-ik3ZgC9dY/lYVVM++OISsaYDeg1tb0VtP5uL3ouh1koGOaUMDPpbFIei4JkFimWUFPn90sbMNMXQAIVOlnYKJA==}
     engines: {node: '>=10'}
+
+  base64-arraybuffer@1.0.2:
+    resolution: {integrity: sha512-I3yl4r9QB5ZRY3XuJVEPfc2XhZO6YweFPI+UovAzn+8/hb3oJ6lnysaFcjVpkCPfVWFUDvoZ8kmVDP7WyRtYtQ==}
+    engines: {node: '>= 0.6.0'}
 
   baseline-browser-mapping@2.10.16:
     resolution: {integrity: sha512-Lyf3aK28zpsD1yQMiiHD4RvVb6UdMoo8xzG2XzFIfR9luPzOpcBlAsT/qfB1XWS1bxWT+UtE4WmQgsp297FYOA==}
@@ -1616,6 +1648,9 @@ packages:
   mgrs@1.0.0:
     resolution: {integrity: sha512-awNbTOqCxK1DBGjalK3xqWIstBZgN6fxsMSiXLs9/spqWkF2pAhb2rrYCFSsr1/tT7PhcDGjZndG8SWYn0byYA==}
 
+  mitt@3.0.1:
+    resolution: {integrity: sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==}
+
   motion-dom@12.38.0:
     resolution: {integrity: sha512-pdkHLD8QYRp8VfiNLb8xIBJis1byQ9gPT3Jnh2jqfFtAsWUA3dEepDlsWe/xMpO8McV+VdpKVcp+E+TGJEtOoA==}
 
@@ -1787,6 +1822,15 @@ packages:
 
   robust-predicates@3.0.3:
     resolution: {integrity: sha512-NS3levdsRIUOmiJ8FZWCP7LG3QpJyrs/TE0Zpf1yvZu8cAJJ6QMW92H1c7kWpdIHo8RvmLxN/o2JXTKHp74lUA==}
+
+  rrdom@2.0.0-alpha.20:
+    resolution: {integrity: sha512-hoqjS4662LtBp82qEz9GrqU36UpEmCvTA2Hns3qdF7cklLFFy3G+0Th8hLytJENleHHWxsB5nWJ3eXz5mSRxdQ==}
+
+  rrweb-snapshot@2.0.0-alpha.20:
+    resolution: {integrity: sha512-YTNf9YVeaGRo/jxY3FKBge2c/Ojd/KTHmuWloUSB+oyPXuY73ZeeG873qMMmhIpqEn7hn7aBF1eWEQmP7wjf8A==}
+
+  rrweb@2.0.0-alpha.20:
+    resolution: {integrity: sha512-CZKDlm+j1VA50Ko3gnMbpvguCAleljsTNXPnVk9aeNP8o6T6kolRbISHyDZpqZ4G+bdDLlQOignPP3jEsXs8Gg==}
 
   saxes@6.0.0:
     resolution: {integrity: sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==}
@@ -2193,6 +2237,21 @@ snapshots:
       number-flow: 0.6.0
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
+
+  '@openpanel/nextjs@1.4.0(next@16.2.2(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      '@openpanel/web': 1.3.0
+      next: 16.2.2(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@openpanel/sdk@1.3.0': {}
+
+  '@openpanel/web@1.3.0':
+    dependencies:
+      '@openpanel/sdk': 1.3.0
+      '@rrweb/types': 2.0.0-alpha.20
+      rrweb: 2.0.0-alpha.20
 
   '@radix-ui/number@1.1.1': {}
 
@@ -2941,6 +3000,10 @@ snapshots:
 
   '@radix-ui/rect@1.1.1': {}
 
+  '@rrweb/types@2.0.0-alpha.20': {}
+
+  '@rrweb/utils@2.0.0-alpha.20': {}
+
   '@swc/helpers@0.5.15':
     dependencies:
       tslib: 2.8.1
@@ -3227,6 +3290,8 @@ snapshots:
       '@types/geojson': 7946.0.16
       tslib: 2.8.1
 
+  '@types/css-font-loading-module@0.0.7': {}
+
   '@types/geojson@7946.0.16': {}
 
   '@types/node@25.5.2':
@@ -3248,9 +3313,13 @@ snapshots:
   '@types/trusted-types@2.0.7':
     optional: true
 
+  '@xstate/fsm@1.6.5': {}
+
   aria-hidden@1.2.6:
     dependencies:
       tslib: 2.8.1
+
+  base64-arraybuffer@1.0.2: {}
 
   baseline-browser-mapping@2.10.16: {}
 
@@ -3445,6 +3514,8 @@ snapshots:
   mdn-data@2.27.1: {}
 
   mgrs@1.0.0: {}
+
+  mitt@3.0.1: {}
 
   motion-dom@12.38.0:
     dependencies:
@@ -3655,6 +3726,25 @@ snapshots:
   require-from-string@2.0.2: {}
 
   robust-predicates@3.0.3: {}
+
+  rrdom@2.0.0-alpha.20:
+    dependencies:
+      rrweb-snapshot: 2.0.0-alpha.20
+
+  rrweb-snapshot@2.0.0-alpha.20:
+    dependencies:
+      postcss: 8.5.9
+
+  rrweb@2.0.0-alpha.20:
+    dependencies:
+      '@rrweb/types': 2.0.0-alpha.20
+      '@rrweb/utils': 2.0.0-alpha.20
+      '@types/css-font-loading-module': 0.0.7
+      '@xstate/fsm': 1.6.5
+      base64-arraybuffer: 1.0.2
+      mitt: 3.0.1
+      rrdom: 2.0.0-alpha.20
+      rrweb-snapshot: 2.0.0-alpha.20
 
   saxes@6.0.0:
     dependencies:

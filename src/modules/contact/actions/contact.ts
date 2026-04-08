@@ -51,18 +51,18 @@ export async function sendEmail(formData: FormData): Promise<SuccessResponse | E
 
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
-      port: 465,
-      secure: true,
+      port: Number(process.env.SMTP_PORT),
+      secure: Boolean(process.env.SMTP_SECURE),
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
       },
     });
 
     const emailTemplate = {
-      from: `${name} <${process.env.EMAIL_USER}>`,
+      from: `${name} <${process.env.SMTP_USER}>`,
       replyTo: email,
-      to: process.env.EMAIL_USER,
+      to: process.env.CONTACT_FORM_TO_EMAIL,
       subject: `New Contact Form Submission from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
       html: `
