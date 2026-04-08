@@ -77,13 +77,12 @@ export default function WorldMap({ dots = [], lineColor = "#0ea5e9" }: MapProps)
   const projectedDots = useMemo(
     () =>
       dots.map((dot) => ({
+        key: `${dot.start.lat},${dot.start.lng}->${dot.end.lat},${dot.end.lng}`,
         start: projectPoint(dot.start.lat, dot.start.lng),
         end: projectPoint(dot.end.lat, dot.end.lng),
       })),
     [dots]
   );
-
-  const paths = useMemo(() => projectedDots.map((dot) => createCurvedPath(dot.start, dot.end)), [projectedDots]);
 
   if (!mapSvg) {
     return <div className="relative aspect-2/1 w-full animate-pulse rounded-lg bg-gray-100" />;
@@ -104,9 +103,9 @@ export default function WorldMap({ dots = [], lineColor = "#0ea5e9" }: MapProps)
         ref={svgRef}
         viewBox="0 0 800 400"
       >
-        {paths.map((path, i) => (
-          <g key={`path-group-${i}`}>
-            <AnimatedPath delay={0.5 * i} lineColor={lineColor} path={path} />
+        {projectedDots.map((dot, i) => (
+          <g key={`path-group-${dot.key}`}>
+            <AnimatedPath delay={0.5 * i} lineColor={lineColor} path={createCurvedPath(dot.start, dot.end)} />
           </g>
         ))}
 
@@ -119,12 +118,12 @@ export default function WorldMap({ dots = [], lineColor = "#0ea5e9" }: MapProps)
           </linearGradient>
         </defs>
 
-        {projectedDots.map((dot, i) => (
-          <g key={`points-group-${i}`}>
-            <g key={`start-${i}`}>
+        {projectedDots.map((dot) => (
+          <g key={`points-group-${dot.key}`}>
+            <g key={`start-${dot.key}`}>
               <AnimatedPoint color={lineColor} x={dot.start.x} y={dot.start.y} />
             </g>
-            <g key={`end-${i}`}>
+            <g key={`end-${dot.key}`}>
               <AnimatedPoint color={lineColor} x={dot.end.x} y={dot.end.y} />
             </g>
           </g>

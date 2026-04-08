@@ -142,7 +142,7 @@ The project is set up for internationalization with:
 ## 🔧 Configuration Files
 
 - `next.config.ts` - Next.js configuration
-- `tailwind.config.ts` - Tailwind CSS configuration
+- `src/app/globals.css` - Tailwind CSS v4 theme and global styles
 - `tsconfig.json` - TypeScript configuration
 - `eslint.config.mjs` - ESLint configuration
 - `.prettierrc` - Prettier configuration

@@ -4,6 +4,10 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  experimental: {
+    turbopackFileSystemCacheForBuild: true,
+    turbopackFileSystemCacheForDev: true,
+  },
 
   images: {
     qualities: [75, 90],
