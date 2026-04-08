@@ -1,8 +1,8 @@
-const isDevelopment = process.env.NODE_ENV === 'development'
+const isDevelopment = process.env.NODE_ENV === "development";
 
 const BreakpointIndicator = () => {
   if (!isDevelopment) {
-    return null // Hide the indicator in production
+    return null; // Hide the indicator in production
   }
 
   return (
@@ -13,7 +13,7 @@ const BreakpointIndicator = () => {
       <div className="hidden lg:block xl:hidden">LG</div>
       <div className="hidden xl:block">XL</div>
     </div>
-  )
-}
+  );
+};
 
-export default BreakpointIndicator
+export default BreakpointIndicator;

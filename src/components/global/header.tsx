@@ -1,9 +1,9 @@
-import Image from 'next/image'
+import Image from "next/image";
 
-import { Separator } from '../ui/separator'
+import { Separator } from "../ui/separator";
 
 interface Props {
-  data: Header
+  data: Header;
 }
 
 export const Header = ({ data }: Props) => {
@@ -16,13 +16,7 @@ export const Header = ({ data }: Props) => {
 
         <p className="md:text-xl">{data.description}</p>
       </div>
-      <Image
-        alt=""
-        className="md:col-span-7"
-        height={569}
-        src={data.image}
-        width={758}
-      />
+      <Image alt="" className="md:col-span-7" height={569} src={data.image} width={758} />
     </header>
-  )
-}
+  );
+};

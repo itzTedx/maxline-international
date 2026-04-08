@@ -1,111 +1,88 @@
-'use client'
+"use client";
 
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from "react";
 
-import { motion } from 'motion/react'
+import { motion } from "motion/react";
 
-import { Button } from '@/components/ui/button'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from '@/components/ui/popover'
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
-import { Icons } from '@/assets/icons'
-import { Logo } from '@/assets/logo'
+import { Icons } from "@/assets/icons";
+import { Logo } from "@/assets/logo";
 
-import { cn, getCurrentTime } from '@/lib/utils'
+import { cn, getCurrentTime } from "@/lib/utils";
 
-export default function FloatingWhatsapp({
-  className,
-}: {
-  className?: string
-}) {
-  const [showMessage, setShowMessage] = useState(false)
-  const [isPopupVisible, setIsPopupVisible] = useState(false)
-  const [message, setMessage] = useState('')
-  const [viewportHeight, setViewportHeight] = useState(
-    typeof window !== 'undefined' ? window.innerHeight : 0
-  )
+export default function FloatingWhatsapp({ className }: { className?: string }) {
+  const [showMessage, setShowMessage] = useState(false);
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [message, setMessage] = useState("");
+  const [viewportHeight, setViewportHeight] = useState(typeof window !== "undefined" ? window.innerHeight : 0);
 
   const updateViewportHeight = useCallback(() => {
-    const newHeight = window.visualViewport?.height || window.innerHeight // Use optional chaining
+    const newHeight = window.visualViewport?.height || window.innerHeight; // Use optional chaining
     if (window.innerWidth < 768) {
-      setViewportHeight(newHeight)
+      setViewportHeight(newHeight);
     }
-  }, [])
+  }, []);
 
   useEffect(() => {
-    window.visualViewport?.addEventListener('resize', updateViewportHeight)
+    window.visualViewport?.addEventListener("resize", updateViewportHeight);
 
     // Cleanup event listener
     return () => {
-      window.visualViewport?.removeEventListener('resize', updateViewportHeight)
-    }
-  }, [updateViewportHeight])
+      window.visualViewport?.removeEventListener("resize", updateViewportHeight);
+    };
+  }, [updateViewportHeight]);
 
   useEffect(() => {
-    const delay = 1 * 1000
-    let timer: NodeJS.Timeout
+    const delay = 1 * 1000;
+    let timer: NodeJS.Timeout;
 
     if (isPopupVisible) {
       timer = setTimeout(() => {
-        setShowMessage(true)
-      }, delay)
+        setShowMessage(true);
+      }, delay);
     }
     // Cleanup the timer on component unmount
-    return () => clearTimeout(timer)
-  }, [isPopupVisible])
+    return () => clearTimeout(timer);
+  }, [isPopupVisible]);
 
   const handleClick = useCallback(() => {
-    setIsPopupVisible(true)
-    updateViewportHeight() // Update height on click
-  }, [updateViewportHeight])
+    setIsPopupVisible(true);
+    updateViewportHeight(); // Update height on click
+  }, [updateViewportHeight]);
 
   const handleInputChange = useCallback(
     (event: React.KeyboardEvent<HTMLInputElement>) => {
-      const newMessage = event.currentTarget.value
-      setMessage(newMessage)
+      const newMessage = event.currentTarget.value;
+      setMessage(newMessage);
       // Check for Enter key press
-      if (event.key === 'Enter') {
-        sendMessageToWhatsApp(newMessage)
+      if (event.key === "Enter") {
+        sendMessageToWhatsApp(newMessage);
       }
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     []
-  )
+  );
 
   const sendMessageToWhatsApp = useCallback((messageToSend: string) => {
-    const encodedMessage = encodeURIComponent(messageToSend)
-    const whatsappUrl = `https://wa.me/${+971987654321}?text=${encodedMessage}`
+    const encodedMessage = encodeURIComponent(messageToSend);
+    const whatsappUrl = `https://wa.me/${+971987654321}?text=${encodedMessage}`;
 
-    window.open(whatsappUrl, '_blank')
-  }, [])
+    window.open(whatsappUrl, "_blank");
+  }, []);
 
   return (
     <div
-      className={cn('fixed right-3 z-99999999 transition-all', className)}
+      className={cn("fixed right-3 z-99999999 transition-all", className)}
       style={{
-        bottom:
-          typeof window !== 'undefined' && viewportHeight < window.innerHeight
-            ? '30vh'
-            : '3vh',
+        bottom: typeof window !== "undefined" && viewportHeight < window.innerHeight ? "30vh" : "3vh",
       }}
     >
       <Popover>
-        <PopoverTrigger
-          className="overflow-hidden rounded-full border shadow-lg"
-          onClick={handleClick}
-        >
+        <PopoverTrigger className="overflow-hidden rounded-full border shadow-lg" onClick={handleClick}>
           <div className="flex size-12 items-center justify-center bg-background">
             <Icons.whatsapp className="size-8" />
           </div>
@@ -124,9 +101,7 @@ export default function FloatingWhatsapp({
                 </span>
               </div>
               <div>
-                <CardTitle className="mt-0 text-background text-xl">
-                  Maxline
-                </CardTitle>
+                <CardTitle className="mt-0 text-background text-xl">Maxline</CardTitle>
                 <CardDescription className="font-light text-muted text-xs">
                   Typically replies within minutes
                 </CardDescription>
@@ -135,23 +110,17 @@ export default function FloatingWhatsapp({
 
             <CardContent className="bg-[url('/whatsapp-bg.jpg')] bg-cover py-0 pb-1.5">
               <div className="relative h-48 border-0 pt-4">
-                <div className="whatsapp-clip -left-3 absolute top-4 z-999 inline-block h-0 w-0" />
-                <motion.div
-                  className="w-fit rounded-lg bg-sky-500 p-3 px-4 text-background shadow-md"
-                  layout
-                >
+                <div className="whatsapp-clip absolute top-4 -left-3 z-999 inline-block h-0 w-0" />
+                <motion.div className="w-fit rounded-lg bg-sky-500 p-3 px-4 text-background shadow-md" layout>
                   {showMessage ? (
                     <div className="min-w-52">
                       <h6 className="pr-12 pb-1.5 font-bold">Maxline</h6>
                       <p className="text-sm">
                         Hello there! 🤝
                         <br />
-                        <strong> Have Questions?</strong> We&apos;d love to
-                        help!
+                        <strong> Have Questions?</strong> We&apos;d love to help!
                       </p>
-                      <aside className="pt-1 text-right text-muted text-xs">
-                        {getCurrentTime()}
-                      </aside>
+                      <aside className="pt-1 text-right text-muted text-xs">{getCurrentTime()}</aside>
                     </div>
                   ) : (
                     <div className="flex h-4 items-center">
@@ -176,9 +145,9 @@ export default function FloatingWhatsapp({
               <Button
                 className="px-1.5"
                 onClick={() => sendMessageToWhatsApp(message)}
-                size={'icon'}
+                size={"icon"}
                 type="submit"
-                variant={'ghost'}
+                variant={"ghost"}
               >
                 <Icons.send className="fill-muted-foreground" />
               </Button>
@@ -187,5 +156,5 @@ export default function FloatingWhatsapp({
         </PopoverContent>
       </Popover>
     </div>
-  )
+  );
 }

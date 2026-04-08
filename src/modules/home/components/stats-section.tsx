@@ -1,13 +1,13 @@
-import Image from 'next/image'
+import Image from "next/image";
 
-import { IconPlus } from '@tabler/icons-react'
+import { IconPlus } from "@tabler/icons-react";
 
-import { NumberCounter } from '@/components/animations/number-counter'
-import { Badge } from '@/components/ui/badge'
-import { Separator } from '@/components/ui/separator'
+import { NumberCounter } from "@/components/animations/number-counter";
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
 
-import { FlagIndia, FlagUae, FlagUsa } from '@/assets/flags'
-import { XIcon } from '@/assets/logo'
+import { FlagIndia, FlagUae, FlagUsa } from "@/assets/flags";
+import { XIcon } from "@/assets/logo";
 
 export const StatsSection = () => {
   return (
@@ -22,15 +22,12 @@ export const StatsSection = () => {
         />
         <XIcon className="-bottom-2 -right-2 absolute z-50 scale-75 text-sky-400 sm:scale-100 md:right-2 md:bottom-2" />
       </div>
-      <Separator
-        className="hidden h-32 bg-sky-900 md:flex"
-        orientation="vertical"
-      />
+      <Separator className="hidden h-32 bg-sky-900 md:flex" orientation="vertical" />
       <StatCounter label="Resellers" value={160} />
       <CountryStats />
     </div>
-  )
-}
+  );
+};
 
 const StatCounter = ({ value, label }: { value: number; label: string }) => (
   <>
@@ -47,7 +44,7 @@ const StatCounter = ({ value, label }: { value: number; label: string }) => (
       </p>
     </div>
   </>
-)
+);
 
 const CountryStats = () => (
   <div className="w-40 space-y-1 *:text-white md:space-y-2.5 lg:w-56">
@@ -64,4 +61,4 @@ const CountryStats = () => (
       </div>
     </div>
   </div>
-)
+);

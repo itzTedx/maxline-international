@@ -1,12 +1,6 @@
 export const TradingBrands = () => {
   return (
-    <svg
-      fill="none"
-      height="569"
-      viewBox="0 0 758 569"
-      width="758"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg fill="none" height="569" viewBox="0 0 758 569" width="758" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_146_7444)">
         <path
           d="M379 173.941V175.465C379 185.794 370.576 194.176 360.175 194.176H254.173"
@@ -32,12 +26,7 @@ export const TradingBrands = () => {
           strokeMiterlimit="10"
           strokeOpacity="0.7"
         />
-        <path
-          d="M379 117.875V299.721"
-          stroke="#BAE6FD"
-          strokeMiterlimit="10"
-          strokeOpacity="0.7"
-        />
+        <path d="M379 117.875V299.721" stroke="#BAE6FD" strokeMiterlimit="10" strokeOpacity="0.7" />
         <path
           d="M118.596 107.51H170.101C180.502 107.51 188.926 99.1367 188.926 88.7993V77.6479C188.926 67.3104 197.35 58.9376 207.751 58.9376H260.479"
           stroke="#BAE6FD"
@@ -142,15 +131,12 @@ export const TradingBrands = () => {
           height="35"
           id="mask0_146_7444"
           maskUnits="userSpaceOnUse"
-          style={{ maskType: 'luminance' }}
+          style={{ maskType: "luminance" }}
           width="91"
           x="333"
           y="341"
         >
-          <path
-            d="M423.389 341.819H333.971V375.498H423.389V341.819Z"
-            fill="white"
-          />
+          <path d="M423.389 341.819H333.971V375.498H423.389V341.819Z" fill="white" />
         </mask>
         <g mask="url(#mask0_146_7444)">
           <path
@@ -198,15 +184,12 @@ export const TradingBrands = () => {
           height="16"
           id="mask1_146_7444"
           maskUnits="userSpaceOnUse"
-          style={{ maskType: 'luminance' }}
+          style={{ maskType: "luminance" }}
           width="98"
           x="48"
           y="359"
         >
-          <path
-            d="M145.892 359.21H48.9446V374.179H145.892V359.21Z"
-            fill="white"
-          />
+          <path d="M145.892 359.21H48.9446V374.179H145.892V359.21Z" fill="white" />
         </mask>
         <g mask="url(#mask1_146_7444)">
           <path
@@ -268,10 +251,7 @@ export const TradingBrands = () => {
           d="M643.027 357.966V367.406H644.515V358.874H645.889C645.889 358.874 646.886 358.874 647.225 359.313C647.517 359.688 647.564 360.37 647.564 360.838C647.564 361.334 647.536 362.092 647.367 362.372C647.112 362.803 646.698 362.887 646.322 362.887H645.418V363.729H646.717C646.717 363.729 647.894 363.776 648.402 363.271C649.023 362.644 649.183 361.802 649.183 360.679C649.183 359.65 648.807 358.621 648.044 358.275C647.414 357.985 646.275 357.985 646.275 357.985H643.037L643.027 357.966Z"
           fill="black"
         />
-        <path
-          d="M650.341 367.406H651.828V357.966H650.341V367.406Z"
-          fill="black"
-        />
+        <path d="M650.341 367.406H651.828V357.966H650.341V367.406Z" fill="black" />
         <path
           d="M659.715 360.174L662.426 367.237L660.873 371.026H662.106L666.586 360.174H665.212L663.254 365.469L661.438 360.174H659.715Z"
           fill="black"
@@ -284,14 +264,8 @@ export const TradingBrands = () => {
           d="M675.782 358.874H674.305V365.806C674.305 365.806 674.342 366.442 674.38 366.657C674.418 366.882 674.738 367.406 675.594 367.406L677.128 367.378V366.489C677.128 366.489 676.714 366.517 676.46 366.517C676.206 366.517 675.895 366.498 675.848 366.068C675.792 365.637 675.792 365.132 675.792 365.132V361.053H677.467V360.165H675.792V358.864L675.782 358.874Z"
           fill="black"
         />
-        <path
-          d="M690.089 367.406H691.567V360.165H690.089V367.406Z"
-          fill="black"
-        />
-        <path
-          d="M690.089 359.285H691.567V357.976H690.089V359.285Z"
-          fill="black"
-        />
+        <path d="M690.089 367.406H691.567V360.165H690.089V367.406Z" fill="black" />
+        <path d="M690.089 359.285H691.567V357.976H690.089V359.285Z" fill="black" />
         <path
           d="M696.254 360.109C697.261 360.109 698.043 360.333 698.466 360.67C698.89 361.007 699.407 361.718 699.407 363.785C699.407 365.853 698.89 366.564 698.466 366.9C698.043 367.237 697.261 367.462 696.254 367.462C695.247 367.462 694.466 367.237 694.042 366.9C693.619 366.564 693.101 365.853 693.101 363.785C693.101 361.718 693.619 361.007 694.042 360.67C694.466 360.333 695.247 360.109 696.254 360.109ZM695.238 361.493C695.031 361.746 694.786 362.27 694.786 363.785C694.786 365.301 695.031 365.825 695.238 366.077C695.445 366.32 695.812 366.489 696.301 366.489C696.791 366.489 697.158 366.32 697.365 366.077C697.563 365.825 697.817 365.301 697.817 363.785C697.817 362.27 697.563 361.746 697.365 361.493C697.158 361.25 696.781 361.081 696.301 361.081C695.821 361.081 695.445 361.25 695.238 361.493Z"
           fill="black"
@@ -332,18 +306,9 @@ export const TradingBrands = () => {
           d="M299.955 69.4995V56.6549C299.955 53.8764 302.223 51.6311 305.009 51.6311C307.795 51.6311 309.866 53.6893 310.054 56.2994V56.6268H310.073V69.5089H312.831V56.6642C312.831 53.8857 315.099 51.6405 317.885 51.6405C320.671 51.6405 322.94 53.8951 322.94 56.6642V69.5089H325.604V56.6268C325.604 52.3515 322.121 48.8901 317.82 48.8901C315.175 48.8901 312.84 50.2092 311.429 52.2112C310.026 50.1998 307.682 48.8901 305.037 48.8901C302.873 48.8901 300.924 49.7601 299.512 51.1727L297.253 49.4233V69.4995H299.945H299.955Z"
           fill="#00A0DC"
         />
-        <path
-          d="M419.323 43.6512H417.121V69.4995H419.323V43.6512Z"
-          fill="#231F20"
-        />
-        <path
-          d="M424.688 54.2599H422.485V69.4995H424.688V54.2599Z"
-          fill="#231F20"
-        />
-        <path
-          d="M424.688 48.2632H422.485V50.6488H424.688V48.2632Z"
-          fill="#231F20"
-        />
+        <path d="M419.323 43.6512H417.121V69.4995H419.323V43.6512Z" fill="#231F20" />
+        <path d="M424.688 54.2599H422.485V69.4995H424.688V54.2599Z" fill="#231F20" />
+        <path d="M424.688 48.2632H422.485V50.6488H424.688V48.2632Z" fill="#231F20" />
         <path
           d="M434.251 53.867C432.481 53.867 430.881 54.5874 429.733 55.7381L427.888 54.2506V69.4995H430.091V60.2098C430.091 57.9459 432.011 56.1029 434.298 56.1029C436.585 56.1029 438.43 57.9459 438.43 60.2098V69.4995H440.614V60.1818C440.614 56.6923 437.762 53.8577 434.251 53.8577"
           fill="#231F20"
@@ -416,21 +381,15 @@ export const TradingBrands = () => {
           height="29"
           id="mask2_146_7444"
           maskUnits="userSpaceOnUse"
-          style={{ maskType: 'luminance' }}
+          style={{ maskType: "luminance" }}
           width="91"
           x="653"
           y="93"
         >
-          <path
-            d="M743.411 93.1682H653.993V121.234H743.411V93.1682Z"
-            fill="white"
-          />
+          <path d="M743.411 93.1682H653.993V121.234H743.411V93.1682Z" fill="white" />
         </mask>
         <g mask="url(#mask2_146_7444)">
-          <path
-            d="M654.031 113.001V93.6266H657.335V113.001H654.031Z"
-            fill="black"
-          />
+          <path d="M654.031 113.001V93.6266H657.335V113.001H654.031Z" fill="black" />
           <path
             d="M665.777 98.9404C661.551 98.9404 658.624 102.299 658.624 106.134C658.624 110.419 661.805 113.375 665.815 113.375C669.825 113.375 672.921 110.475 672.921 106.125C672.921 102.467 670.182 98.9404 665.787 98.9404H665.777ZM665.74 102.224C667.952 102.224 669.58 104.002 669.58 106.144C669.58 108.417 667.782 110.082 665.796 110.082C663.453 110.082 661.965 108.165 661.965 106.153C661.965 103.945 663.631 102.224 665.73 102.224H665.74Z"
             fill="black"
@@ -443,10 +402,7 @@ export const TradingBrands = () => {
             d="M684.988 113.946C684.988 116.219 683.191 117.894 681.205 117.894C678.861 117.894 677.374 115.957 677.374 113.946H674.023C674.023 118.231 677.204 121.187 681.214 121.187C685.224 121.187 688.311 118.296 688.311 113.946H684.979H684.988Z"
             fill="black"
           />
-          <path
-            d="M689.657 113.001V99.3427H692.96V113.001H689.657Z"
-            fill="black"
-          />
+          <path d="M689.657 113.001V99.3427H692.96V113.001H689.657Z" fill="black" />
           <path
             d="M696.161 113.001V102.402H694.391V99.3426H696.161V95.1515H699.464V99.3426H701.281V102.402H699.464V113.001H696.161Z"
             fill="black"
@@ -481,17 +437,8 @@ export const TradingBrands = () => {
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImageFix" stdDeviation="12" />
-          <feComposite
-            in2="SourceAlpha"
-            operator="in"
-            result="effect1_backgroundBlur_146_7444"
-          />
-          <feBlend
-            in="SourceGraphic"
-            in2="effect1_backgroundBlur_146_7444"
-            mode="normal"
-            result="shape"
-          />
+          <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_146_7444" />
+          <feBlend in="SourceGraphic" in2="effect1_backgroundBlur_146_7444" mode="normal" result="shape" />
         </filter>
         <filter
           colorInterpolationFilters="sRGB"
@@ -504,17 +451,8 @@ export const TradingBrands = () => {
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImageFix" stdDeviation="12" />
-          <feComposite
-            in2="SourceAlpha"
-            operator="in"
-            result="effect1_backgroundBlur_146_7444"
-          />
-          <feBlend
-            in="SourceGraphic"
-            in2="effect1_backgroundBlur_146_7444"
-            mode="normal"
-            result="shape"
-          />
+          <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_146_7444" />
+          <feBlend in="SourceGraphic" in2="effect1_backgroundBlur_146_7444" mode="normal" result="shape" />
         </filter>
         <filter
           colorInterpolationFilters="sRGB"
@@ -527,17 +465,8 @@ export const TradingBrands = () => {
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImageFix" stdDeviation="12" />
-          <feComposite
-            in2="SourceAlpha"
-            operator="in"
-            result="effect1_backgroundBlur_146_7444"
-          />
-          <feBlend
-            in="SourceGraphic"
-            in2="effect1_backgroundBlur_146_7444"
-            mode="normal"
-            result="shape"
-          />
+          <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_146_7444" />
+          <feBlend in="SourceGraphic" in2="effect1_backgroundBlur_146_7444" mode="normal" result="shape" />
         </filter>
         <filter
           colorInterpolationFilters="sRGB"
@@ -550,17 +479,8 @@ export const TradingBrands = () => {
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImageFix" stdDeviation="12" />
-          <feComposite
-            in2="SourceAlpha"
-            operator="in"
-            result="effect1_backgroundBlur_146_7444"
-          />
-          <feBlend
-            in="SourceGraphic"
-            in2="effect1_backgroundBlur_146_7444"
-            mode="normal"
-            result="shape"
-          />
+          <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_146_7444" />
+          <feBlend in="SourceGraphic" in2="effect1_backgroundBlur_146_7444" mode="normal" result="shape" />
         </filter>
         <filter
           colorInterpolationFilters="sRGB"
@@ -573,22 +493,13 @@ export const TradingBrands = () => {
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImageFix" stdDeviation="12" />
-          <feComposite
-            in2="SourceAlpha"
-            operator="in"
-            result="effect1_backgroundBlur_146_7444"
-          />
-          <feBlend
-            in="SourceGraphic"
-            in2="effect1_backgroundBlur_146_7444"
-            mode="normal"
-            result="shape"
-          />
+          <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_146_7444" />
+          <feBlend in="SourceGraphic" in2="effect1_backgroundBlur_146_7444" mode="normal" result="shape" />
         </filter>
         <clipPath id="clip0_146_7444">
           <rect fill="white" height="569" width="758" />
         </clipPath>
       </defs>
     </svg>
-  )
-}
+  );
+};

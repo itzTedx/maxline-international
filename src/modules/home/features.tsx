@@ -1,51 +1,35 @@
-import { memo, useMemo } from 'react'
+import { memo, useMemo } from "react";
 
-import { AnimatedCard } from '@/components/animations/animated-card'
-import { AuroraText } from '@/components/animations/aurora-text'
+import { AnimatedCard } from "@/components/animations/animated-card";
+import { AuroraText } from "@/components/animations/aurora-text";
 
-import {
-  IconClock24,
-  IconClogHand,
-  IconCloudService,
-  IconComputer,
-  IconData,
-  IconSecurity,
-} from '@/assets/icons'
+import { IconClock24, IconClogHand, IconCloudService, IconComputer, IconData, IconSecurity } from "@/assets/icons";
 
-import { cn } from '@/lib/utils'
+import { cn } from "@/lib/utils";
 
 // Memoized feature card component with better props typing
 interface FeatureCardProps {
-  title: string
-  Icon: React.ComponentType<{ className?: string }>
-  description: string
-  isFirst?: boolean
-  isLast?: boolean
-  ariaLabel?: string
+  title: string;
+  Icon: React.ComponentType<{ className?: string }>;
+  description: string;
+  isFirst?: boolean;
+  isLast?: boolean;
+  ariaLabel?: string;
 }
 
 const FeatureCard = memo(
-  ({
-    title,
-    Icon,
-    description,
-    isFirst,
-    isLast,
-    ariaLabel,
-  }: FeatureCardProps) => (
+  ({ title, Icon, description, isFirst, isLast, ariaLabel }: FeatureCardProps) => (
     <AnimatedCard
       aria-label={ariaLabel}
       className={cn(
-        'group',
+        "group",
         isFirst
-          ? 'text-black md:col-span-10 lg:col-span-5'
+          ? "text-black md:col-span-10 lg:col-span-5"
           : isLast
-          ? 'md:col-span-10 lg:col-span-5'
-          : 'md:col-span-5 lg:col-span-3'
+            ? "md:col-span-10 lg:col-span-5"
+            : "md:col-span-5 lg:col-span-3"
       )}
-      contentClassName={`h-full p-6 justify-between ${
-        isFirst ? 'group-first:bg-sky-700/70' : ''
-      }`}
+      contentClassName={`h-full p-6 justify-between ${isFirst ? "group-first:bg-sky-700/70" : ""}`}
       key={title}
       role="listitem"
     >
@@ -53,12 +37,8 @@ const FeatureCard = memo(
         <Icon className="size-12 text-slate-800 md:size-14" />
       </div>
       <div className="mt-4 space-y-3">
-        <h3 className="whitespace-pre-line text-balance font-poly-sans text-2xl md:text-2xl">
-          {title}
-        </h3>
-        <p className="text-pretty leading-relaxed md:whitespace-pre-line md:text-balance md:text-lg">
-          {description}
-        </p>
+        <h3 className="whitespace-pre-line text-balance font-poly-sans text-2xl md:text-2xl">{title}</h3>
+        <p className="text-pretty leading-relaxed md:whitespace-pre-line md:text-balance md:text-lg">{description}</p>
       </div>
     </AnimatedCard>
   ),
@@ -69,77 +49,69 @@ const FeatureCard = memo(
       prevProps.description === nextProps.description &&
       prevProps.isFirst === nextProps.isFirst &&
       prevProps.isLast === nextProps.isLast
-    )
+    );
   }
-)
+);
 
-FeatureCard.displayName = 'FeatureCard'
+FeatureCard.displayName = "FeatureCard";
 
 export function Features() {
   const features = useMemo(
     () => [
       {
-        title: 'Comprehensive ICT & ELV Solutions',
+        title: "Comprehensive ICT & ELV Solutions",
         description:
-          'Tailored ICT, ELV, and AV solutions, including structured cabling, networking, and smart technology integration for businesses of all sizes.',
+          "Tailored ICT, ELV, and AV solutions, including structured cabling, networking, and smart technology integration for businesses of all sizes.",
         Icon: IconComputer,
       },
       {
-        title: 'Advanced Data & Network Infrastructure',
+        title: "Advanced Data & Network Infrastructure",
         description:
-          'Optimize data management with high-performance networking, structured cabling, and IT infrastructure solutions.',
+          "Optimize data management with high-performance networking, structured cabling, and IT infrastructure solutions.",
         Icon: IconData,
       },
       {
-        title: 'Security & Surveillance Systems',
+        title: "Security & Surveillance Systems",
         description:
-          'Protect your business with state-of-the-art security solutions, including CCTV, access control, and intrusion detection.',
+          "Protect your business with state-of-the-art security solutions, including CCTV, access control, and intrusion detection.",
         Icon: IconSecurity,
       },
       {
-        title: 'Smart & Scalable AV Solutions',
+        title: "Smart & Scalable AV Solutions",
         description:
-          'Enhance communication and engagement with smart audio-visual solutions, video conferencing, and digital signage.',
+          "Enhance communication and engagement with smart audio-visual solutions, video conferencing, and digital signage.",
         Icon: IconCloudService,
       },
       {
-        title: 'Technology Consulting & Integration',
+        title: "Technology Consulting & Integration",
         description:
-          'Expert consulting to help businesses implement the latest ICT and ELV technologies for seamless operations.',
+          "Expert consulting to help businesses implement the latest ICT and ELV technologies for seamless operations.",
         Icon: IconClogHand,
       },
       {
-        title: '24/7 Technical Support & Maintenance',
-        description:
-          'Reliable support and maintenance to ensure optimal performance of your ICT, ELV, and AV systems.',
+        title: "24/7 Technical Support & Maintenance",
+        description: "Reliable support and maintenance to ensure optimal performance of your ICT, ELV, and AV systems.",
         Icon: IconClock24,
       },
     ],
     []
-  )
+  );
 
   // Structured data for SEO
   const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
+    "@context": "https://schema.org",
+    "@type": "ItemList",
     itemListElement: features.map((feature, index) => ({
-      '@type': 'ListItem',
+      "@type": "ListItem",
       position: index + 1,
       name: feature.title,
       description: feature.description,
     })),
-  }
+  };
 
   return (
-    <section
-      aria-labelledby="features-heading"
-      className="container py-16 md:py-32"
-      id="features"
-    >
-      <h2
-        className="pb-9 text-center text-3xl md:mx-auto md:w-fit md:pb-20 md:text-5xl"
-        id="features-heading"
-      >
+    <section aria-labelledby="features-heading" className="container py-16 md:py-32" id="features">
+      <h2 className="pb-9 text-center text-3xl md:mx-auto md:w-fit md:pb-20 md:text-5xl" id="features-heading">
         <AuroraText>Foundational</AuroraText> Values
         <br />
         for Sustainable Growth
@@ -156,14 +128,11 @@ export function Features() {
           />
         ))}
       </div>
-      <script
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        type="application/ld+json"
-      />
+      <script dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} type="application/ld+json" />
     </section>
-  )
+  );
 }
 
 // Enable component preloading
-export const runtime = 'edge'
-export const preferredRegion = 'auto'
+export const runtime = "edge";
+export const preferredRegion = "auto";

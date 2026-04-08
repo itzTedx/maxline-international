@@ -1,14 +1,14 @@
-import { NavigationMenu } from '../ui/navigation-menu'
-import { NAV_DISTRIBUTIONS, NAV_SERVICES, NAV_TRADINGS } from './constant'
-import { MegaMenu } from './mega-menu'
-import { MobileNav } from './mobile-nav'
+import { NavigationMenu } from "../ui/navigation-menu";
+import { NAV_DISTRIBUTIONS, NAV_SERVICES, NAV_TRADINGS } from "./constant";
+import { MegaMenu } from "./mega-menu";
+import { MobileNav } from "./mobile-nav";
 
 export const Navbar = () => {
   const navItems: NavLinks = {
     distributions: NAV_DISTRIBUTIONS,
     tradings: NAV_TRADINGS,
     services: NAV_SERVICES,
-  }
+  };
 
   return (
     <NavigationMenu
@@ -20,5 +20,5 @@ export const Navbar = () => {
 
       <MegaMenu className="hidden md:flex" links={navItems} />
     </NavigationMenu>
-  )
-}
+  );
+};

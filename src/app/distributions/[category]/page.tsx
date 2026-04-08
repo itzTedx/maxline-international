@@ -1,25 +1,25 @@
-import { Metadata } from 'next'
-import { notFound } from 'next/navigation'
+import { Metadata } from "next";
+import { notFound } from "next/navigation";
 
-import { ItemCard } from '@/components/global/items'
+import { ItemCard } from "@/components/global/items";
 
-import { slugify } from '@/lib/utils'
+import { slugify } from "@/lib/utils";
 
-import { DATA } from '../constants'
+import { DATA } from "../constants";
 
-type Params = Promise<{ category: string }>
+type Params = Promise<{ category: string }>;
 interface Props {
-  params: Params
+  params: Params;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { category } = await params
-  const data = DATA.find((d) => slugify(d.category) === category)
+  const { category } = await params;
+  const data = DATA.find((d) => slugify(d.category) === category);
 
   if (!data) {
     return {
-      title: 'Category Not Found',
-    }
+      title: "Category Not Found",
+    };
   }
 
   return {
@@ -30,21 +30,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: `Browse our ${data.category} product range and brands`,
     },
     alternates: { canonical: `/distributions/${category}` },
-  }
+  };
 }
 
 export function generateStaticParams() {
   return DATA.map((category) => ({
     category: slugify(category.category),
-  }))
+  }));
 }
 
 export default async function Page({ params }: Props) {
-  const { category } = await params
-  const data = DATA.find((d) => slugify(d.category) === category)
+  const { category } = await params;
+  const data = DATA.find((d) => slugify(d.category) === category);
 
   if (!data) {
-    notFound()
+    notFound();
   }
 
   return (
@@ -56,5 +56,5 @@ export default async function Page({ params }: Props) {
         ))}
       </section>
     </main>
-  )
+  );
 }

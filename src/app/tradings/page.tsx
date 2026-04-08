@@ -1,45 +1,36 @@
-import { Suspense } from 'react'
-import { Metadata } from 'next'
-import dynamic from 'next/dynamic'
+import { Suspense } from "react";
+import { Metadata } from "next";
+import dynamic from "next/dynamic";
 
-import { LoadingSpinner } from '@/components/loading-spinner'
+import { LoadingSpinner } from "@/components/loading-spinner";
 
-import { CONTENT, DATA } from './constants'
+import { CONTENT, DATA } from "./constants";
 
 // Dynamic imports
-const Banner = dynamic(
-  () => import('@/components/global/banner').then((mod) => mod.Banner),
-  {
-    loading: () => <LoadingSpinner />,
-  }
-)
-const Header = dynamic(
-  () => import('@/components/global/header').then((mod) => mod.Header),
-  {
-    loading: () => <LoadingSpinner />,
-  }
-)
-const Items = dynamic(
-  () => import('@/components/global/items').then((mod) => mod.Items),
-  {
-    loading: () => <LoadingSpinner />,
-  }
-)
+const Banner = dynamic(() => import("@/components/global/banner").then((mod) => mod.Banner), {
+  loading: () => <LoadingSpinner />,
+});
+const Header = dynamic(() => import("@/components/global/header").then((mod) => mod.Header), {
+  loading: () => <LoadingSpinner />,
+});
+const Items = dynamic(() => import("@/components/global/items").then((mod) => mod.Items), {
+  loading: () => <LoadingSpinner />,
+});
 
 export const metadata: Metadata = {
-  title: 'Trading Page | MaxLine',
-  alternates: { canonical: '/tradings' },
-  description: 'View all trading activities and statistics',
+  title: "Trading Page | MaxLine",
+  alternates: { canonical: "/tradings" },
+  description: "View all trading activities and statistics",
   openGraph: {
-    title: 'Trading Page | MaxLine',
-    description: 'View all trading activities and statistics',
-    type: 'website',
+    title: "Trading Page | MaxLine",
+    description: "View all trading activities and statistics",
+    type: "website",
   },
-}
+};
 
 export default function TradingsPage() {
-  const content = CONTENT
-  const data = DATA
+  const content = CONTENT;
+  const data = DATA;
 
   return (
     <main className="trading-page">
@@ -55,5 +46,5 @@ export default function TradingsPage() {
         </Suspense>
       </section>
     </main>
-  )
+  );
 }

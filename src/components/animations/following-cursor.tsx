@@ -1,89 +1,82 @@
-'use client'
+"use client";
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 
-import {
-  AnimatePresence,
-  MotionValue,
-  motion,
-  useMotionValue,
-} from 'motion/react'
+import { AnimatePresence, MotionValue, motion, useMotionValue } from "motion/react";
 
-import { cn } from '@/lib/utils'
+import { cn } from "@/lib/utils";
 
 export const FollowerPointerCard = ({
   children,
   className,
   title,
 }: {
-  children: React.ReactNode
-  className?: string
-  title?: string | React.ReactNode
+  children: React.ReactNode;
+  className?: string;
+  title?: string | React.ReactNode;
 }) => {
-  const x = useMotionValue(0)
-  const y = useMotionValue(0)
-  const ref = React.useRef<HTMLDivElement>(null)
-  const [rect, setRect] = useState<DOMRect | null>(null)
-  const [isInside, setIsInside] = useState<boolean>(false) // Add this line
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const ref = React.useRef<HTMLDivElement>(null);
+  const [rect, setRect] = useState<DOMRect | null>(null);
+  const [isInside, setIsInside] = useState<boolean>(false); // Add this line
 
   useEffect(() => {
     if (ref.current) {
-      setRect(ref.current.getBoundingClientRect())
+      setRect(ref.current.getBoundingClientRect());
     }
-  }, [])
+  }, []);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (rect) {
-      const scrollX = window.scrollX
-      const scrollY = window.scrollY
-      x.set(e.clientX - rect.left + scrollX)
-      y.set(e.clientY - rect.top + scrollY)
+      const scrollX = window.scrollX;
+      const scrollY = window.scrollY;
+      x.set(e.clientX - rect.left + scrollX);
+      y.set(e.clientY - rect.top + scrollY);
     }
-  }
+  };
   const handleMouseLeave = () => {
-    setIsInside(false)
-  }
+    setIsInside(false);
+  };
 
   const handleMouseEnter = () => {
-    setIsInside(true)
-  }
+    setIsInside(true);
+  };
   return (
     <div
-      className={cn('relative', className)}
+      className={cn("relative", className)}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onMouseMove={handleMouseMove}
       ref={ref}
       style={{
-        cursor: 'none',
+        cursor: "none",
       }}
     >
-      <AnimatePresence>
-        {isInside && <FollowPointer title={title} x={x} y={y} />}
-      </AnimatePresence>
+      <AnimatePresence>{isInside && <FollowPointer title={title} x={x} y={y} />}</AnimatePresence>
       {children}
     </div>
-  )
-}
+  );
+};
 
 export const FollowPointer = ({
   x,
   y,
   title,
 }: {
-  x: MotionValue<number>
-  y: MotionValue<number>
-  title?: string | React.ReactNode
+  x: MotionValue<number>;
+  y: MotionValue<number>;
+  title?: string | React.ReactNode;
 }) => {
   const colors = [
-    'var(--sky-500)',
-    'var(--neutral-500)',
-    'var(--teal-500)',
-    'var(--green-500)',
-    'var(--blue-500)',
-    'var(--red-500)',
-    'var(--yellow-500)',
-  ]
+    "var(--sky-500)",
+    "var(--neutral-500)",
+    "var(--teal-500)",
+    "var(--green-500)",
+    "var(--blue-500)",
+    "var(--red-500)",
+    "var(--yellow-500)",
+  ];
   return (
     <motion.div
       animate={{
@@ -102,7 +95,7 @@ export const FollowPointer = ({
       style={{
         top: y,
         left: x,
-        pointerEvents: 'none',
+        pointerEvents: "none",
       }}
     >
       <svg
@@ -122,9 +115,7 @@ export const FollowPointer = ({
           scale: 1,
           opacity: 1,
         }}
-        className={
-          'min-w-max whitespace-nowrap rounded-full bg-neutral-200 px-2 py-2 text-white text-xs'
-        }
+        className={"min-w-max whitespace-nowrap rounded-full bg-neutral-200 px-2 py-2 text-white text-xs"}
         exit={{
           scale: 0.5,
           opacity: 0,
@@ -137,8 +128,8 @@ export const FollowPointer = ({
           backgroundColor: colors[Math.floor(Math.random() * colors.length)],
         }}
       >
-        {title || 'William Shakespeare'}
+        {title || "William Shakespeare"}
       </motion.div>
     </motion.div>
-  )
-}
+  );
+};
