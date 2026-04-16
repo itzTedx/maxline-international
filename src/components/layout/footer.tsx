@@ -108,6 +108,12 @@ export const Footer = memo(() => {
           aria-label="Maxline Internationals logo"
           className="absolute bottom-4 left-0 h-auto w-full translate-y-1/2 md:bottom-4"
         />
+        <Link
+          className="absolute bottom-4 left-1/2 z-20 -translate-x-1/2 font-light text-muted-foreground text-xs"
+          href="https://www.zironpro.ae?utm_source=maxline&utm_medium=website&utm_campaign=footer_credit&utm_content=designed_by"
+        >
+          Website made by ZironPro
+        </Link>
       </div>
     </footer>
   );
