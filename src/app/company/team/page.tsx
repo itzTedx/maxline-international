@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 
 import { Button } from "@/components/ui/button";
 
@@ -54,7 +55,7 @@ const structuredData = {
 export default function TeamPage() {
   return (
     <>
-      <script dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} type="application/ld+json" />
+      <Script type="application/ld+json">{JSON.stringify(structuredData)}</Script>
       <main>
         <header className="relative m-3 flex items-center justify-center overflow-hidden rounded-3xl bg-linear-to-b from-sky-950 to-[#062438] pt-40 pb-20">
           <div className="z-10 space-y-6 text-center">

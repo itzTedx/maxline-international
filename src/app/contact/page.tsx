@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main className="relative">
-      <Grid className="-top-20 absolute h-auto w-full rotate-180 opacity-50" />
+      <Grid className="absolute -top-20 h-auto w-full rotate-180 opacity-50" />
       <Header />
 
       <ContactCard />

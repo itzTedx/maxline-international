@@ -64,7 +64,7 @@ export default function GalleryPage() {
         {GALLERY.map((image, i) => (
           <div
             className={cn("relative mt-3 inline-block w-full md:mt-6", image.isVertical ? "aspect-3/4" : "aspect-4/3")}
-            key={i}
+            key={Number(i)}
           >
             <Image
               alt={image.alt}

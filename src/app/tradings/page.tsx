@@ -18,11 +18,11 @@ const Items = dynamic(() => import("@/components/global/items").then((mod) => mo
 });
 
 export const metadata: Metadata = {
-  title: "Trading Page | MaxLine",
+  title: "Trading | MaxLine",
   alternates: { canonical: "/tradings" },
   description: "View all trading activities and statistics",
   openGraph: {
-    title: "Trading Page | MaxLine",
+    title: "Trading | MaxLine",
     description: "View all trading activities and statistics",
     type: "website",
   },

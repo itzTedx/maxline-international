@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.zironmedia.com/sitemap.xml",
+    sitemap: "https://maxline-international.com/sitemap.xml",
   };
 }
